@@ -1464,7 +1464,7 @@ function vis(v,cls='',r){
 /* A phone's screen: a screenshot, or a loop recorded from the prototype (.mp4). */
 const phoneScreen=p=>/\.mp4$/.test(p)?`<video src="${ver(p)}" muted autoplay loop playsinline aria-hidden="true"></video>`:`<img src="${pic(p)}" data-image="${p}" alt="${/\/news-/.test(p)?'A classic news app':'NexGen screen'}" loading="lazy">`;
 const SITE_IMAGE_NAME='Name of the image: ';
-const imageName=n=>`<figcaption class="image-name">${SITE_IMAGE_NAME}${esc(n)}</figcaption>`;
+const imageName=n=>'';
 /* One name per image (2026-10-19): an image keeps the name it has in Long (its Long chapter and number), wherever it
    appears, so Short and Long name the same file the same way. The key is the file without its extension, so a still
    and its loop (ask.png, ask.mp4) share a name. Images only in Short keep their Short name. */
@@ -1487,7 +1487,7 @@ function caseMedia(v,name,cls='',r){
   /* pile (2026-10-18): the phones overlap back to front; see the case-phone-pile rules */
   if(v.phones&&v.pile) return `<figure data-image-name="${esc(name)}-1 to -${v.phones.length}, back to front" class="vis craft phones case-phone-collection case-phone-pile case-named ${cls}" ${ratio(r)}>${v.phones.map((p,i)=>`<div class="case-phone" style="--i:${i}"><div class="phone">${phoneScreen(p)}</div></div>`).join('')}${imageName(`${name}-1 to -${v.phones.length}, back to front`)}</figure>`;
   if(v.phones&&v.phones.length>3) return `<figure data-image-name="${esc(name)}-1 to -${v.phones.length}, left to right" class="vis craft phones case-phone-collection case-phone-row case-named ${cls}" ${ratio(r)}>${v.phones.map(p=>`<div class="case-phone"><div class="phone">${phoneScreen(p)}</div></div>`).join('')}${imageName(`${name}-1 to -${v.phones.length}, left to right`)}</figure>`;
-  if(v.phones) return `<figure class="vis craft phones case-phone-collection ${v.addon?'has-addon':''} ${cls}" ${ratio(r)}>${v.phones.map((p,i)=>`<div class="case-phone"><div class="phone">${phoneScreen(p)}</div><span class="image-name">${SITE_IMAGE_NAME}${esc(name)}-${i+1}</span></div>`).join('')}${v.addon?`<div class="phone-addon">${phoneScreen(v.addon)}</div>`:''}</figure>`;
+  if(v.phones) return `<figure class="vis craft phones case-phone-collection ${v.addon?'has-addon':''} ${cls}" ${ratio(r)}>${v.phones.map((p,i)=>`<div class="case-phone"><div class="phone">${phoneScreen(p)}</div></div>`).join('')}${v.addon?`<div class="phone-addon">${phoneScreen(v.addon)}</div>`:''}</figure>`;
   if(v.img) return vis(v,cls,r).replace('<figure class="vis',`<figure data-image-name="${esc(name)}" class="vis case-named`).replace(/<\/figure>$/,`${imageName(name)}</figure>`);   // keeps the rest of the class list (hero, contain…)
   return vis(v,cls,r);
 }
