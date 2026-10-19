@@ -1,0 +1,225 @@
+/* Compass (white-label): Foundation, a code-first design system in three rooms, with its tuning panel. */
+.stg-compass-system{background:#0b0a12}
+.cs{position:absolute;inset:0;--acc:#9333ea;--h1:3.35;--r:24px;--rn:16px;color:#fff;font-family:"Space Grotesk",sans-serif;
+  background:radial-gradient(60% 70% at 38% 46%,color-mix(in srgb,var(--acc) 26%,transparent),transparent 70%),radial-gradient(50% 60% at 80% 90%,rgba(40,180,170,.12),transparent 70%),#0c0b14}
+.cs-bar{position:absolute;left:0;right:0;top:0;height:58px;display:flex;align-items:center;gap:28px;padding:0 28px 0 24px;border-bottom:1px solid rgba(255,255,255,.07);z-index:3}
+.cs-brand{display:flex;align-items:center;gap:10px;font-size:15px}.cs-brand svg{width:20px;color:var(--acc)}.cs-brand b{font-weight:500}.cs-brand small{font:500 11px/1 "Geist Mono",monospace;color:rgba(255,255,255,.4)}
+.cs-rooms{display:flex;gap:2px;padding:3px;border-radius:12px;background:rgba(255,255,255,.06)}
+.cs-rooms span{padding:8px 18px;border-radius:9px;font-size:14px;color:rgba(255,255,255,.55);transition:background .35s,color .35s}
+.cs-rooms span.on{background:rgba(255,255,255,.12);color:#fff}
+.cs-lint{display:flex;align-items:center;gap:8px;font:500 12px/1 "Geist Mono",monospace;color:rgba(255,255,255,.6);margin-left:auto}
+.cs-lint i{width:8px;height:8px;border-radius:50%;background:#3fd18b}
+.cs[data-room="system"]:not(.cs-fixed) .cs-lint i{background:#ff5d6c}
+.cs[data-room="system"]:not(.cs-fixed) .cs-lint b{font-size:0}.cs[data-room="system"]:not(.cs-fixed) .cs-lint b::after{content:"1 problem";font-size:12px;color:#ff8f99}
+.cs-rooms-wrap{position:absolute;left:0;right:296px;top:58px;bottom:0;overflow:hidden}
+.cs-room{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .8s var(--e);pointer-events:none}
+.cs[data-room="stage"] .stage,.cs[data-room="tokens"] .tokens,.cs[data-room="system"] .system{opacity:1;transform:none;pointer-events:auto}
+.cs-photo{position:absolute;inset:0;background:radial-gradient(14% 18% at 18% 30%,rgba(255,200,140,.18),transparent 70%),radial-gradient(10% 14% at 30% 70%,rgba(255,170,120,.12),transparent 70%),radial-gradient(18% 22% at 8% 80%,rgba(180,140,255,.12),transparent 70%);filter:blur(6px)}
+.cs-apply{position:absolute;left:44px;top:56px;display:grid;gap:8px;text-transform:uppercase}
+.cs-apply b{font:300 40px/1 "Space Grotesk",sans-serif;letter-spacing:.01em}
+.cs-apply span{font:300 20px/1.2 "Space Grotesk",sans-serif;color:rgba(255,255,255,.75);max-width:13ch}
+.cs-card{position:absolute;right:46px;top:50%;transform:translateY(-46%);width:560px;padding:28px 30px 30px;border-radius:var(--r);background:linear-gradient(160deg,rgba(44,28,76,.78),rgba(16,12,30,.86));border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -30px rgba(0,0,0,.7),0 0 80px -30px color-mix(in srgb,var(--acc) 50%,transparent);contain:layout paint}
+.cs-ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.cs-ct{display:flex;align-items:center;gap:10px;font-size:15px;letter-spacing:.04em}.cs-ct svg{width:22px;color:var(--acc)}
+.cs-live{display:flex;align-items:center;gap:8px;font:500 12px/1 "Geist Mono",monospace;letter-spacing:.06em}.cs-live i{width:7px;height:7px;border-radius:50%;background:#3fd18b;box-shadow:0 0 0 3px rgba(63,209,139,.2);animation:cs-pulse 2s ease-in-out infinite}
+@keyframes cs-pulse{50%{box-shadow:0 0 0 6px rgba(63,209,139,0)}}
+.cs-h1{margin:0 0 18px;font:italic 600 calc(var(--h1)*16px)/.98 "Barlow Condensed",sans-serif;letter-spacing:.005em;text-transform:uppercase}
+.cs-h1 em{color:var(--acc);font-style:italic}
+.cs-p{margin:0 0 22px;font-size:15.5px;line-height:1.5;color:rgba(255,255,255,.86);max-width:44ch}
+.cs-panel{padding:18px 20px;border-radius:var(--rn);background:rgba(255,255,255,.06);display:grid;gap:10px}
+.cs-m{display:flex;justify-content:space-between;font-size:15px}.cs-m b{font-weight:500;font-variant-numeric:tabular-nums}.cs-m.mut{color:rgba(255,255,255,.62);margin-top:6px}
+.cs-bar1,.cs-bar2{height:8px;border-radius:4px;background:rgba(255,255,255,.1);overflow:hidden}
+.cs-bar1 i{display:block;height:100%;width:100%;border-radius:4px;background:var(--acc);transform-origin:0 50%;transform:scaleX(.84);transition:transform 1s var(--e)}
+.cs-bar2 i{display:block;height:100%;width:72%;border-radius:4px;background:rgba(255,255,255,.4)}
+.cs-sheet{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max-content;max-width:calc(100% - 52px);border-radius:16px;background:#fafcff;color:#061b3d;padding:26px 28px;display:grid;grid-template-columns:repeat(4,auto);gap:24px;font-size:12.5px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.cs-sheet>div{border-right:1px solid #e3e7ee;padding-right:24px}.cs-sheet span,.cs-sheet dd{white-space:nowrap}.cs-sheet>div:last-child{border:0}
+.cs-sheet h5{margin:0 0 14px;font:600 13px/1 "Space Grotesk",sans-serif}.cs-sheet h5.mt{margin-top:22px}
+.cs-sw,.cs-aa{display:grid;grid-template-columns:20px 1fr auto;gap:10px;align-items:center;margin-bottom:12px}
+.cs-sw i,.cs-aa i{width:20px;height:20px;border-radius:50%}
+.cs-sheet i.acc{background:var(--acc)}
+.cs-sheet code{font:400 11.5px/1 "Geist Mono",monospace;color:#67758b}
+.cs-sheet dl{margin:0;display:grid;grid-template-columns:auto auto;gap:9px 14px}.cs-sheet dl.wide{grid-template-columns:auto 1fr auto}.cs-sheet dl.k{grid-template-columns:auto 1fr}
+.cs-sheet dt{font-weight:600}.cs-sheet dd{margin:0;color:#3d4b63;font-family:"Geist Mono",monospace;font-size:11.5px}
+.cs-aa{grid-template-columns:20px 1fr auto auto}
+.cs-aa b{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:11px;color:#fff}
+.cs-aa b.ok{background:#22b573}.cs-aa b.bad{background:#ff4d5e;animation:cs-shake .5s}
+@keyframes cs-shake{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+.cs-rules{position:absolute;left:28px;right:28px;top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cs-rules article{padding:20px 22px;border-radius:var(--rn);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:grid;gap:8px}
+.cs-rules b{font-weight:500;font-size:18px}.cs-rules span{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.62)}
+.cs-code{position:absolute;left:28px;right:28px;bottom:28px;border-radius:12px;background:#0f1117;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.cs-file{padding:10px 16px;font:500 12px/1 "Geist Mono",monospace;color:rgba(255,255,255,.5);border-bottom:1px solid rgba(255,255,255,.06)}
+.cs-code pre{margin:0;padding:14px 16px;font:400 13px/1.7 "Geist Mono",monospace;color:#c9d1e3}
+.cs-code .ln{display:inline-block;width:26px;color:rgba(255,255,255,.25)}
+.cs-badv{font-weight:400;color:#ffb35c;text-decoration:underline wavy #ff5d6c;text-underline-offset:4px;transition:color .4s}
+.cs-fixed .cs-badv{color:#7ee2a8;text-decoration-color:transparent}
+.cs-msg{display:flex;gap:10px;align-items:center;padding:10px 16px;border-top:1px solid rgba(255,255,255,.06);font:400 12.5px/1.4 "Geist Mono",monospace;color:#ff9aa3;transition:color .4s,background .4s}
+.cs-msg i{font-style:normal;width:18px;height:18px;border-radius:50%;background:#ff4d5e;color:#fff;display:grid;place-items:center;font-size:10px}
+.cs-msg code{color:#fff}
+.cs-fixed .cs-msg{color:#7ee2a8;background:rgba(63,209,139,.06)}.cs-fixed .cs-msg i{background:#22b573}
+.cs-fixed .cs-msg span{font-size:0}.cs-fixed .cs-msg span::after{content:"Fixed: the value now comes from text-muted. 0 problems.";font-size:12.5px}
+.cs-fixed .cs-msg i{font-size:0}.cs-fixed .cs-msg i::after{content:"✓";font-size:11px}
+.cs-leva{position:absolute;right:14px;top:72px;bottom:14px;width:268px;border-radius:10px;background:#181c20;box-shadow:0 20px 50px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.04);font:400 11.5px/1 "Geist Mono",monospace;color:#8c92a4;overflow:hidden;z-index:4}
+.cs-lh{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#292d39;color:#fefefe}.cs-lh i{width:26px;height:4px;border-radius:2px;background:#535760}
+.cs-grp{padding:14px 14px 6px;color:#fefefe;font-weight:500}
+.cs-row{display:grid;grid-template-columns:76px 1fr 38px 22px;gap:8px;align-items:center;padding:6px 14px;min-height:30px}
+.cs-row em{font-style:normal;color:#c5c9d6;text-align:right}.cs-row em.sel{grid-column:2/-1;text-align:left;padding:6px 8px;border-radius:4px;background:#373c4b}
+.cs-row small{color:#5c6170}
+.cs-row.dim{opacity:.55}
+.cs-chip{width:100%;height:20px;border-radius:3px;grid-column:2}
+.cs-row:has(.cs-chip) em{grid-column:3/-1}
+.cs-fader{position:relative;height:20px;--t:.5}
+.cs-fader .trk{position:absolute;left:0;right:0;top:8px;height:4px;border-radius:2px;background:#373c4b}
+.cs-fader .fill{position:absolute;left:0;top:8px;height:4px;width:calc(var(--t)*100%);border-radius:2px;background:#007bff}
+.cs-fader .knob{position:absolute;top:3px;left:calc(var(--t)*100%);width:14px;height:14px;margin-left:-7px;border-radius:50%;background:#fefefe;box-shadow:0 0 0 0 rgba(0,123,255,.4);transition:box-shadow .25s}
+.cs-fader.on .knob{box-shadow:0 0 0 6px rgba(0,123,255,.35)}
+.cs-fader[data-k="hue"] .trk{background:linear-gradient(90deg,#f33,#ff3,#3f3,#3ff,#33f,#f3f,#f33)}
+.cs-fader[data-k="hue"] .fill{display:none}
+.cs-fader[data-k="hue"] .knob{background:var(--acc);box-shadow:0 0 0 2px #fff}
+.cs-fader[data-k="hue"].on .knob{box-shadow:0 0 0 2px #fff,0 0 0 7px rgba(255,255,255,.18)}
+
+/* ---------- Compass intelligence: the live chat, as people met it in testing ----------
+   Its own look, unrelated to the product it comes from: warm paper, forest green, tight corners, a compact chat. */
+.stg-compass-intel{background:#F3EFE6}
+.ci{--bg:#F3EFE6;--card:#FFFCF6;--line:#E4DCCB;--ink:#1E2721;--mute:#7A7366;--acc:#1F6B47;--acc-2:#DDEBDF;position:absolute;inset:0;background:var(--bg);color:var(--ink);font:400 13px/1.4 "Nunito Sans",sans-serif}
+.ci-era{position:absolute;left:14px;bottom:14px;z-index:20;display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 12px 0 10px;border-radius:99px;background:rgba(30,39,33,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:500 11px/1 "Geist Mono",monospace;letter-spacing:.04em;color:#fff;pointer-events:none}
+.ci-era i{width:7px;height:7px;border-radius:50%;background:#F59E0B;transition:background .5s}
+.ci-era em{font-style:normal;color:rgba(255,255,255,.6);font-variant-numeric:tabular-nums}.ci-era em:empty{display:none}
+.ci-era.late i{background:#EF4444}.ci-era.late em{color:#FCA5A5}.ci-era.quit b{color:#FCA5A5}
+.ci-page{position:absolute;inset:0}
+.ci-main{position:relative;height:100%;padding:30px 40px;overflow:hidden}
+.ci-hd{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}.ci-hd b{font-size:22px;font-weight:800;letter-spacing:-.01em}.ci-hd span{font:400 12px "Geist Mono",monospace;color:var(--mute)}
+.ci-sp{width:17px;height:17px;color:var(--acc);flex:none}
+.ci-ask{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:16px}
+.ci-ah{display:flex;gap:10px;margin-bottom:12px}.ci-ah b{display:block;font-size:14px;font-weight:700}.ci-ah span{color:var(--mute)}
+.ci-in{position:relative;display:flex;align-items:center;height:46px;padding:0 6px 0 14px;border:1px solid #D6CDBA;border-radius:12px;background:#fff;transition:border-color .25s,box-shadow .25s;font-size:14px}
+.ci-focus .ci-in{border-color:var(--acc);box-shadow:0 0 0 3px rgba(31,107,71,.14)}
+.ci-q{font-style:normal;color:var(--ink);white-space:nowrap}
+.ci-caret{width:1.5px;height:16px;background:var(--acc);margin-left:1px;opacity:0}
+.ci-focus .ci-in .ci-caret{opacity:1;animation:gd-caret .9s steps(2) infinite}
+@keyframes gd-caret{50%{opacity:0}}
+.ci-ph{color:#A39B8B;position:absolute;left:15px;top:50%;transform:translateY(-50%);transition:opacity .2s}
+.ci-focus .ci-ph{opacity:0}
+.ci-send{margin-left:auto;width:34px;height:34px;border-radius:8px;background:var(--acc);color:#fff;display:grid;place-items:center}.ci-send svg{width:15px;height:15px;transform:translateX(-1px)}
+.ci-sugg{display:flex;gap:6px;margin-top:10px}.ci-sugg span{padding:5px 11px;border:1px solid var(--line);border-radius:99px;color:var(--mute);font-size:12px;background:var(--bg)}
+.ci-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.ci-kpis>div{position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:3px}
+.ci-kpis span{color:var(--mute);font-size:12px}.ci-kpis b{font:500 22px/1.15 "Geist Mono",monospace;letter-spacing:-.02em}.ci-kpis em{font:400 11.5px "Geist Mono",monospace;font-style:normal}
+.ci-kpis em.up{color:var(--acc)}.ci-kpis em.dn{color:#B4412F}
+.ci-spark{position:absolute;right:14px;bottom:14px;width:60px;height:20px}.ci-spark.up{color:var(--acc)}.ci-spark.dn{color:#B4412F}
+.ci-two{display:grid;grid-template-columns:1.2fr 1fr;gap:12px}
+.ci-box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.ci-box h5{display:flex;justify-content:space-between;margin:0 0 8px;font-size:13px;font-weight:700}.ci-box small{color:var(--acc);font-weight:600}
+.ci-or{display:grid;grid-template-columns:1.3fr 1fr auto;padding:7px 0;border-top:1px solid #EFE8DA;color:#3F453F}.ci-or span:last-child{font-family:"Geist Mono",monospace;font-size:12px}
+.ci-bars{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;align-items:end;height:150px;padding-top:6px}
+.ci-bars span{display:grid;grid-template-rows:1fr auto;gap:6px;height:100%;align-items:end;justify-items:center}
+.ci-bars i{width:100%;border-radius:3px 3px 0 0;background:#C9DCCB}.ci-bars span:nth-child(-n+5) i{background:var(--acc)}
+.ci-bars small{color:var(--mute);font:400 10.5px "Geist Mono",monospace}
+/* the chat: one 18px gutter, one radius family, everything centred on its line; the page steps back */
+.ci-shade{position:absolute;inset:0;z-index:2;background:rgba(20,26,22,.6);opacity:0;pointer-events:none;transition:opacity .7s ease}
+.ci-chaton .ci-shade{opacity:1}
+.ci-chat{position:absolute;right:0;top:0;bottom:0;width:400px;background:var(--card);box-shadow:none;transform:translateX(102%);transition:transform .8s var(--e),box-shadow .8s var(--e);display:flex;flex-direction:column;z-index:3}
+.ci-chaton .ci-chat{transform:none;box-shadow:-24px 0 60px rgba(0,0,0,.28)}   /* the shadow only when it's open: closed, nothing shows at the edge */
+.ci-chh{display:flex;align-items:center;gap:10px;height:60px;padding:0 18px;border-bottom:1px solid var(--line);flex:none}
+.ci-av{width:30px;height:30px;border-radius:8px;background:var(--acc-2);display:grid;place-items:center}.ci-av .ci-sp{width:16px;height:16px}
+.ci-chh div{display:grid;gap:1px}.ci-chh b{font-size:14px;font-weight:700;line-height:1.2}.ci-chh small{font-size:11.5px;color:var(--mute);line-height:1.2}
+.ci-chh .ci-x{margin-left:auto;width:28px;height:28px;display:grid;place-items:center;border-radius:7px;color:var(--mute)}
+.ci-x svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.ci-msgs{flex:1;min-height:0;overflow:hidden;padding:16px 18px;display:flex;flex-direction:column;gap:10px;justify-content:flex-end}
+.ci-bot,.ci-user{flex:none;max-width:85%;padding:9px 13px;line-height:1.45;font-size:13.5px;animation:ci-in .4s var(--e) both}
+.ci-bot{align-self:flex-start;background:#F1EBDF;color:var(--ink);border-radius:12px 12px 12px 4px}
+.ci-bot ol{margin:6px 0 2px;padding-left:18px}.ci-bot li+li{margin-top:2px}
+.ci-user{align-self:flex-end;background:var(--acc);color:#fff;border-radius:12px 12px 4px 12px}
+@keyframes ci-in{from{opacity:0;transform:translateY(6px)}}
+.ci-typing{flex:none;display:none;align-items:center;gap:4px;height:34px;padding:0 13px;background:#F1EBDF;border-radius:12px 12px 12px 4px;align-self:flex-start}.ci-typing.on{display:flex}
+.ci-typing i{width:5px;height:5px;border-radius:50%;background:#A39B8B;animation:ci-dot 1.2s ease-in-out infinite}.ci-typing i:nth-child(2){animation-delay:.15s}.ci-typing i:nth-child(3){animation-delay:.3s}
+@keyframes ci-dot{40%{transform:translateY(-3px);background:var(--mute)}}
+.ci-cin{position:relative;flex:none;display:flex;align-items:center;gap:8px;margin:0 18px;height:46px;padding:0 6px 0 14px;border:1px solid #D6CDBA;border-radius:12px;background:#fff;font-size:13.5px;transition:border-color .25s,box-shadow .25s}
+.ci-cq{flex:0 1 auto;min-width:0;overflow:hidden;line-height:20px}
+.ci-cin .ci-caret{flex:none;height:16px;margin-left:-8px}
+.ci-cph{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:#A39B8B;transition:opacity .2s;pointer-events:none}
+.ci-go{flex:none;margin-left:auto;width:34px;height:34px;border-radius:8px;background:var(--acc);color:#fff;display:grid;place-items:center}
+.ci-go svg{width:15px;height:15px;transform:translateX(-1px)}
+.ci-cfocus .ci-cin{border-color:var(--acc);box-shadow:0 0 0 3px rgba(31,107,71,.14)}
+.ci-cfocus .ci-cph,.ci-cq:not(:empty)~.ci-cph{opacity:0}
+.ci-cfocus .ci-cin .ci-caret{opacity:1;animation:gd-caret .9s steps(2) infinite}
+.ci-disc{display:block;flex:none;padding:9px 18px 14px;text-align:center;color:#A39B8B;font-size:10.5px}
+/* what they think, beside the cursor */
+.stg-world.stg-compass-intel:hover .cur{opacity:1}
+.cur.ci-hand{z-index:95}
+.cur.ci-hand svg{fill:var(--ink,#1E2721)}
+.ci-think{position:absolute;left:22px;top:22px;padding:7px 12px;border-radius:13px 13px 13px 3px;background:#4B5548;color:#fff;font:700 15px/1.2 "Nunito Sans",sans-serif;white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.28);opacity:0;transform:scale(.7);transform-origin:0 0;transition:opacity .3s,transform .45s var(--e),background .5s}
+.ci-think.on{opacity:1;transform:none}
+.ci-think.l{left:auto;right:20px;top:24px;border-radius:13px 3px 13px 13px;transform-origin:100% 0}
+.ci-think.m1{background:#B45309}.ci-think.m2{background:#EA580C}.ci-think.m3{background:#DC2626}
+.ci-think.m4{background:#7F1D1D;font-size:17px;letter-spacing:.02em;box-shadow:0 0 0 3px rgba(220,38,38,.35),0 10px 24px rgba(0,0,0,.35)}
+.ci-think.on.pop{animation:ci-pop .4s var(--e)}.ci-think.on.m4.pop{animation:ci-rage .5s ease}
+@keyframes ci-pop{from{transform:scale(.8)}}
+@keyframes ci-rage{20%{transform:translateX(-4px) rotate(-2deg)}40%{transform:translateX(4px) rotate(2deg)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}
+
+/* ---------- Foundation v2: the agent, live checks, honest controls ---------- */
+.stg-world.stg-compass-system:hover .cur{opacity:1}
+.cur.agent{z-index:95;transition:transform .8s cubic-bezier(.45,.05,.2,1),opacity .4s}
+.cur.agent svg{fill:var(--acc,#9333ea);stroke:#fff}
+.cur-tag{position:absolute;left:18px;top:18px;display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 9px;border-radius:11px 11px 11px 3px;background:var(--acc,#9333ea);color:#fff;font:600 11px/1 "Space Grotesk",sans-serif;white-space:nowrap;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.cur-tag em{font-style:normal;font-weight:400;opacity:.9;max-width:0;overflow:hidden;transition:max-width .5s var(--e)}
+.cur.talking .cur-tag em{max-width:200px}
+.cur.talking .cur-tag em::before{content:"· "}
+.cur.yield{opacity:.55}
+.cur.yield .cur-tag{background:#3a3c47}
+.cs-rooms span{cursor:pointer}
+.cs-rooms span:not(.on):hover{background:rgba(255,255,255,.07);color:#fff}
+.cs-lint{transition:color .3s}
+.cs.has-problems .cs-lint i{background:#ff5d6c;box-shadow:0 0 0 4px rgba(255,93,108,.18)}
+.cs.has-problems .cs-lint{color:#ff9aa3}
+.cs[data-room="system"]:not(.cs-fixed) .cs-lint i{background:#3fd18b}
+.cs[data-room="system"]:not(.cs-fixed) .cs-lint b{font-size:12px}.cs[data-room="system"]:not(.cs-fixed) .cs-lint b::after{content:none}
+.cs.has-problems[data-room="system"] .cs-lint i{background:#ff5d6c}
+/* the panel: live controls read as live, the rest is plainly read-only */
+.cs-leva .cs-lh em{font-style:normal;color:#3fd18b;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+.cs-row.live span{color:#e4e6ee}
+.cs-row.live .cs-fader{cursor:ew-resize}
+.cs-row.live:hover{background:rgba(255,255,255,.035)}
+.cs-row.live:hover .knob{transform:scale(1.15)}
+.cs-fader .knob{transition:box-shadow .25s,transform .2s}
+.cs-fader.agent-on .knob{box-shadow:0 0 0 6px color-mix(in srgb,var(--acc) 40%,transparent)}
+.cs-row.off{opacity:.34;filter:grayscale(1)}
+.cs-row.off .knob{background:#6b7080;box-shadow:none}
+.cs-row.off .fill{background:#4a4f5c}
+.cs-row.off small{display:grid;place-items:center}
+.cs-lk{width:11px;height:11px;fill:none;stroke:#9aa0b0;stroke-width:1.4}
+.cs-sel{grid-column:2/-2;font-style:normal;padding:5px 8px;border-radius:4px;background:#2a2e38;color:#9aa0b0}
+.cs-row.off .cs-chip{grid-column:2}
+.cs-fader[data-k="lit"] .trk{background:linear-gradient(90deg,#111,var(--acc),#fff)}
+.cs-fader[data-k="lit"] .fill{display:none}
+.cs-fader[data-k="lit"] .knob{background:var(--acc);box-shadow:0 0 0 2px #fff}
+/* tokens */
+.cs-sheet .hot,.cs-sheet .hot-t{border-radius:6px;transition:background .5s}
+.cs-sheet .flash{animation:cs-flash 1.3s ease}
+@keyframes cs-flash{0%,60%{background:color-mix(in srgb,var(--acc) 16%,transparent)}100%{background:transparent}}
+.cs-scale{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;margin-top:18px;font:400 10.5px/1 "Geist Mono",monospace;color:#67758b}
+.cs-scale i{position:relative;height:6px;border-radius:3px;background:#e9edf3}
+.cs-sc-ok{position:absolute;left:10%;right:10%;top:0;bottom:0;border-radius:3px;background:#cfeedd}
+.cs-sc-dot{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#22b573;box-shadow:0 0 0 2px #fff;transition:background .3s}
+.cs.bad-scale .cs-sc-dot{background:#ff4d5e}
+.cs-note{contain:inline-size;margin:10px 0 0;font-size:11px;line-height:1.4;color:#67758b}
+.cs-aa code{font:400 11px/1 "Geist Mono",monospace}
+/* system */
+.cs-sys{position:absolute;inset:28px;display:grid;grid-template-columns:1.05fr 1fr;gap:18px;align-items:start;align-content:center}
+.cs-sys .cs-code{position:static;align-self:start}
+.cs-file span{float:right;color:rgba(255,255,255,.3)}
+.cs-code pre{font-size:14px;line-height:1.8}
+.cs-code .k{color:#9cc7ff}.cs-code .s{color:#ffd59a;border-radius:3px;transition:background .4s}
+.cs-checks{padding:18px 20px;border-radius:var(--rn);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);display:grid;gap:12px;align-content:start}
+.cs-checks h5{margin:0 0 4px;font:500 15px/1 "Space Grotesk",sans-serif;display:flex;justify-content:space-between}.cs-checks h5 small{font:400 11px/1 "Geist Mono",monospace;color:rgba(255,255,255,.4)}
+.cs-ck{display:grid;grid-template-columns:20px 1fr;gap:12px;align-items:start;padding:10px 12px;border-radius:10px;transition:background .4s}
+.cs-ck i{width:18px;height:18px;border-radius:50%;margin-top:1px;display:grid;place-items:center;background:#22b573;transition:background .3s}
+.cs-ck i::after{content:"✓";color:#fff;font:700 10px/1 sans-serif;font-style:normal}
+.cs-ck b{display:block;font-weight:500;font-size:14px}.cs-ck span{font:400 12px/1.5 "Geist Mono",monospace;color:rgba(255,255,255,.6)}
+.cs-ck.bad{background:rgba(255,77,94,.1)}.cs-ck.bad i{background:#ff4d5e}.cs-ck.bad i::after{content:"✕"}.cs-ck.bad span{color:#ffb0b7}
+.cs-ck.flash{animation:cs-flash 1.3s ease}
+.cs-card{left:50%!important;right:auto!important;transform:translate(-50%,-48%)!important}
+/* phones: no "Live chat, as tested" chip (2026-10-17) */
+.is-small .ci-era{display:none}
+/* near the app's right edge the agent's label sits left of its cursor (core.js desk) */
+.cur.flip .cur-tag{left:auto;right:12px;border-radius:11px 11px 3px 11px}

@@ -1,0 +1,34 @@
+/* Field: the table at 45 degrees. A path-traced scale model on a warm sweep; crisp labels on top. */
+.stg-beer-table{background:#D9D2C8;--ink:#2A231D;--ink2:rgba(42,35,29,.78);--amber:#B9640F;--amber2:#E58A22;--ash:#857A6D}
+.bt-wrap{position:absolute;inset:0}
+.stg .stg-world .bt-img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;opacity:0;transition:opacity .8s ease}
+.stg .stg-world.bt-own .bt-img{object-fit:contain;object-position:50% 50%}
+.stg-world .bt-img[src]{opacity:1}
+.bt-ov{position:absolute;inset:0;pointer-events:none;font-family:Jost,sans-serif;color:var(--ink)}
+.bt-ov>*{position:absolute}
+/* under each shop: the heading, then what people did */
+.bt-cap{transform:translateX(-50%);display:grid;justify-items:start;gap:12px}
+.bt-cap h4{margin:0;display:flex;align-items:baseline;gap:14px}
+.bt-cap h4 b{font:italic 400 clamp(28px,3.3vw,46px)/1 "Instrument Serif",Georgia,serif;letter-spacing:-.01em}
+.bt-cap.a h4 b{color:var(--amber)}
+.bt-cap h4 span{font:500 10.5px/1 "Geist Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--ash)}
+.bt-cap ol{margin:0;padding:0;list-style:none;counter-reset:n;display:grid;gap:7px;font-size:clamp(12.5px,1.08vw,15px);color:var(--ink2)}
+.bt-cap li{counter-increment:n;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.bt-cap li::before{content:counter(n);flex:none;width:19px;height:19px;border-radius:50%;display:grid;place-items:center;font:600 10px/1 "Geist Mono",monospace}
+.bt-cap.b li::before{background:#FBF8F3;border:1.25px solid var(--ink);color:var(--ink)}
+.bt-cap.a li::before{background:var(--amber2);color:#fff}
+/* the result, between the two captions */
+.bt-mid{transform:translateX(-50%);display:grid;justify-items:center;text-align:center;gap:4px}
+.bt-mid b{font:400 clamp(44px,7.4vw,104px)/.9 "Instrument Serif",Georgia,serif;color:var(--amber);letter-spacing:-.02em}
+.bt-mid span{font-size:clamp(14px,1.5vw,19px);color:var(--ink)}
+.bt-mid small{font:500 10px/1 "Geist Mono",monospace;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-top:4px}
+/* numbered pins on the floor */
+.bt-pin{transform:translate(-50%,-50%);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:600 11.5px/1 "Geist Mono",monospace;font-style:normal;box-shadow:0 3px 10px rgba(40,25,10,.28)}
+.bt-pin.b{background:#FBF8F3;color:var(--ink);border:1.5px solid var(--ink)}
+.bt-pin.a{background:var(--amber2);color:#fff;border:1.5px solid #FFE3BF}
+/* small boxes: the two shops, their names and the result; the lists go */
+.bt-small .bt-cap ol,.bt-small .bt-cap h4 span,.bt-small .bt-mid small,.bt-small .bt-mid span{display:none}
+.bt-small .bt-pin{width:15px;height:15px;font-size:8.5px;border-width:1px}
+.bt-small .bt-cap h4 b{font-size:19px}.bt-small .bt-mid b{font-size:30px}
+/* a tall mobile picture sets the block's proportions, on the landing and the case page alike (the window cap still applies) */
+.fw[data-style] #site[data-case] figure.vis.stg.craft.bt-tall{aspect-ratio:var(--bt-ar)!important}

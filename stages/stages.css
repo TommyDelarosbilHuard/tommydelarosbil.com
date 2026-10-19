@@ -1,0 +1,88 @@
+/* Stages: shared pieces. Each case adds its own sheet (cedar.css, gdi.css, …). */
+.stg{--e:cubic-bezier(.16,1,.3,1);--e2:cubic-bezier(.65,0,.35,1);isolation:isolate;cursor:default}
+/* a click outside the interactive work opens the case; the phone turns; controls keep their own cursor */
+.stg-world{cursor:pointer}
+.stg-world.on-zone{cursor:default}
+.stg-world.on-phone{cursor:grab}
+.stg-world{position:absolute;inset:0;overflow:hidden;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;contain:layout paint}
+.stg-world *{-webkit-user-drag:none}
+.frame:not(.colour) .stg-world{filter:grayscale(1)}
+.stg-world.grabbing,.stg-world.grabbing *{cursor:grabbing!important}
+.stg [data-act]{cursor:pointer}
+.stg [data-drag]{cursor:ew-resize;touch-action:none}
+.stg .stg-world img,.stg .stg-world video{width:auto;height:auto;filter:none;object-fit:fill}
+
+/* entrance: things rise into place the first time the stage is seen */
+.stg-world .rise{opacity:0;transform:translateY(16px);transition:opacity .9s var(--e),transform 1.3s var(--e)}
+.stg-world.in .rise{opacity:1;transform:none}
+.stg-world.in .rise.d1{transition-delay:.15s}.stg-world.in .rise.d2{transition-delay:.3s}.stg-world.in .rise.d3{transition-delay:.45s}.stg-world.in .rise.d4{transition-delay:.6s}
+.is-pressed{transform:scale(.965)!important;transition:transform .12s ease!important}
+
+/* ---------- 3D phone ---------- */
+.p3{position:absolute;width:calc(var(--ph)*.485);height:var(--ph);perspective:calc(var(--ph)*3.6);z-index:3;opacity:var(--op,0)}
+.p3::after{content:"";position:absolute;left:8%;right:8%;bottom:-4.5%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),rgba(0,0,0,0));filter:blur(calc(var(--ph)*.014));transform:translateX(calc(var(--sh,0)*-18%)) scaleX(calc(1 - var(--sh,0)*var(--sh,0)*.25));z-index:-1;pointer-events:none}
+.p3-body{position:absolute;inset:0;transform-style:preserve-3d;transform:var(--rot)}
+.p3-edge{position:absolute;inset:0;border-radius:calc(var(--ph)*.074);transform:translateZ(calc((var(--k) - .5)*var(--ph)*.05));background:linear-gradient(145deg,var(--rim1,#8f9297),var(--rim2,#3a3c40) 28%,var(--rim3,#6e7176) 52%,var(--rim2,#2b2d30) 78%,var(--rim1,#666a6f))}
+.p3-front,.p3-back{position:absolute;inset:0;border-radius:calc(var(--ph)*.074);-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.p3-front{transform:translateZ(calc(var(--ph)*.0252));padding:calc(var(--ph)*.006);background:linear-gradient(145deg,var(--rimf1,#d4d6da),var(--rimf2,#5a5d61) 30%,var(--rimf1,#a7aaaf) 55%,var(--rimf2,#3b3d40) 80%,var(--rimf1,#9a9da2))}
+.p3-glass{position:relative;height:100%;border-radius:calc(var(--ph)*.068);background:#040405;padding:calc(var(--ph)*.02);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07)}
+.p3-screen{position:relative;width:100%;height:100%;border-radius:calc(var(--ph)*.05);overflow:hidden;background:#fff;transform:translateZ(0)}
+.p3-ui{position:absolute;left:0;top:0;width:390px;height:var(--uih,844px);transform:scale(var(--s,1));transform-origin:0 0;overflow:hidden}
+.p3-island{position:absolute;left:50%;top:calc(var(--ph)*.034);width:calc(var(--ph)*.105);height:calc(var(--ph)*.031);transform:translateX(-50%);border-radius:99px;background:#000;z-index:5}
+.p3-glare{position:absolute;inset:calc(var(--ph)*.02);border-radius:calc(var(--ph)*.05);pointer-events:none;z-index:6;background:linear-gradient(112deg,transparent 30%,rgba(255,255,255,.13) 45%,rgba(255,255,255,.03) 55%,transparent 68%);background-size:280% 100%;background-position:var(--gl,50%) 0}
+.p3-back{transform:rotateY(180deg) translateZ(calc(var(--ph)*.0252));background:var(--back,#1f2023);overflow:hidden}
+.p3-cam{position:absolute;left:7%;top:3.6%;width:44%;aspect-ratio:1;border-radius:24%;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 6px 14px rgba(0,0,0,.25)}
+.p3-cam i{position:absolute;width:38%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 38% 32%,#46506a,#07080c 58%);box-shadow:0 0 0 calc(var(--ph)*.004) #2c2d30,0 0 0 calc(var(--ph)*.006) #6a6d72}
+.p3-cam i:nth-child(1){left:9%;top:9%}.p3-cam i:nth-child(2){left:9%;top:53%}.p3-cam i:nth-child(3){left:53%;top:31%}
+
+/* status bar for phone UIs */
+.sb{position:absolute;left:0;right:0;top:0;height:54px;display:flex;align-items:center;justify-content:space-between;padding:6px 30px 0 34px;font:600 16px/1 -apple-system,"SF Pro Text",Inter,sans-serif;z-index:30;pointer-events:none}
+.sb svg{display:block;height:12px;width:auto;fill:currentColor}
+.sb .ic{display:flex;gap:6px;align-items:center}
+
+/* screens inside a phone UI */
+.scr{position:absolute;inset:0;transition:transform .62s var(--e),opacity .45s ease,filter .62s var(--e);will-change:transform}
+.scr.off-r{transform:translateX(100%)}
+.scr.off-l{transform:translateX(-28%);filter:brightness(.85)}
+.scr.off-d{transform:translateY(100%)}
+.scr.fade{opacity:0}
+.tap-dot{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:rgba(20,20,20,.14);box-shadow:0 0 0 1.5px rgba(255,255,255,.8),0 6px 20px rgba(0,0,0,.18);pointer-events:none;z-index:80;animation:tapd .7s var(--e) forwards}
+@keyframes tapd{0%{transform:scale(.55);opacity:0}25%{opacity:1}100%{transform:scale(1.25);opacity:0}}
+
+/* ---------- desktop canvas ---------- */
+.dsk{position:absolute;inset:0;overflow:hidden}
+.dsk-cam{position:absolute;left:0;top:0;transform-origin:0 0;transition:transform .9s var(--e)}
+.dsk-ui{position:relative;overflow:hidden}
+.cur{position:absolute;left:-5px;top:-3px;width:24px;height:24px;z-index:90;transition:transform .8s cubic-bezier(.45,.05,.2,1),opacity .4s ease;pointer-events:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));transform:translate(760px,420px)}
+.cur svg{width:100%;height:100%;fill:#111;stroke:#fff;stroke-width:1.5;stroke-linejoin:round;transition:transform .12s ease;transform-origin:20% 10%}
+.cur.down svg{transform:scale(.84)}
+.cur.hide{opacity:0}
+.stg-world:hover .cur{opacity:.0}
+.click-ring{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:2px solid rgba(255,255,255,.95);box-shadow:0 0 0 1px rgba(0,0,0,.12),0 0 18px rgba(255,255,255,.35);pointer-events:none;z-index:89;animation:ring .6s var(--e) forwards}
+@keyframes ring{0%{transform:scale(.4);opacity:1}100%{transform:scale(1.4);opacity:0}}
+@media (prefers-reduced-motion:reduce){.stg-world *{animation-duration:.01s!important;transition-duration:.01s!important}}
+
+/* small boxes: the row already says white-label; the stage keeps its craft */
+
+/* a click on a dead spot leaves a ripple; the row's button nudges (index.html .row-cta) */
+.stg-ripple,.nxs .stg-ripple{position:absolute;z-index:29;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;border:1.5px solid rgba(255,255,255,.75);box-shadow:0 0 0 1px rgba(0,0,0,.15);pointer-events:none;animation:ring .6s cubic-bezier(.16,1,.3,1) forwards}
+/* a control that isn't live in this demo answers "no" */
+[data-off]{cursor:not-allowed!important}
+[data-off].deny{animation:deny .4s ease}
+@keyframes deny{20%{transform:translateX(-3px)}40%{transform:translateX(3px)}60%{transform:translateX(-2px)}80%{transform:translateX(1px)}}
+
+
+/* ---------- the NexGen phone (phone3d.js): WebGL body, live HTML screen on the glass ---------- */
+.g3{position:absolute;inset:0;z-index:3}
+.g3-gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+.g3-css{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+/* Until the first frame puts the screen on the glass (three.js may still be loading), show nothing rather than a flat screen. */
+.g3:not(.live):not(.flat) .g3-css{visibility:hidden}
+.g3-cam{position:absolute;left:0;top:0;transform-style:preserve-3d;pointer-events:none}
+.g3-scr{position:absolute;left:0;top:0;width:390px;height:844px;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;pointer-events:auto;background:#000}
+.g3 .p3-ui.g3-ui{position:absolute;inset:0;width:390px;height:844px;transform:none}
+.g3-glare{position:absolute;inset:0;pointer-events:none;z-index:90;background:linear-gradient(112deg,transparent 30%,rgba(255,255,255,.10) 45%,rgba(255,255,255,.02) 55%,transparent 68%);background-size:280% 100%;background-position:var(--gl,50%) 0}
+.g3.flat .g3-gl{display:none}
+.g3.flat .g3-css{display:grid;place-items:center}
+.g3.flat .g3-cam{position:relative;width:auto!important;height:auto!important}
+.g3.flat .g3-scr{position:relative;transform:scale(.55)!important;border:10px solid #111}

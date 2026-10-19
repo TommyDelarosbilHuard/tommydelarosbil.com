@@ -1,0 +1,301 @@
+@font-face{font-family:"Cedar Hind";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/cedar-hind-400.woff2") format("woff2")}
+@font-face{font-family:"Cedar Hind";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/cedar-hind-500.woff2") format("woff2")}
+@font-face{font-family:"Cedar Hind";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/cedar-hind-600.woff2") format("woff2")}
+@font-face{font-family:"Cedar Hind";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/cedar-hind-700.woff2") format("woff2")}
+@font-face{font-family:"Cedar Raleway";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/cedar-raleway-400.woff2") format("woff2")}
+@font-face{font-family:"Cedar Roboto";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/cedar-roboto-400.woff2") format("woff2")}
+@font-face{font-family:"Cedar Roboto";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/cedar-roboto-500.woff2") format("woff2")}
+@font-face{font-family:"Cedar Roboto";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/cedar-roboto-700.woff2") format("woff2")}
+/* Cedar: the phone over an engineer's desk at night (img/cedar-env.jpg), Cedar green behind it. */
+.stg-cedar{background:#07090a;color:#fff;--mint:#37D67A;--mint-ink:#0B3D22}
+/* Cedar green, centred on the phone: the image layer's first background (--glow) */
+
+
+.stg-cedar .p3-back{--back:linear-gradient(160deg,#4BE38E,#1FAE5C)}
+.cd-backlogo{position:absolute;left:0;right:0;top:44%;display:grid;justify-items:center;gap:10px;color:var(--mint-ink)}
+.cd-backlogo b{font:600 28px/1 Outfit,sans-serif;letter-spacing:-.02em}
+
+/* ---- Gmail, iOS ---- */
+.stg-cedar .p3-ui{font-family:Roboto,"Helvetica Neue",Arial,sans-serif;color:#1f1f1f;background:#fff}
+.stg-cedar .p3-ui.no-anim *{transition:none!important}
+.cd-m1,.cd-m2{background:#fff}
+.gm-top{padding:58px 14px 6px}
+.gm-search{display:flex;align-items:center;gap:14px;height:50px;padding:0 10px 0 16px;border-radius:26px;background:#EAF1FB;color:#444746;font-size:16px}
+.gm-search svg{width:22px;height:22px}
+.gm-search em{font-style:normal;flex:1}
+.gm-me{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#7B61FF;color:#fff;font:500 15px/1 Roboto,sans-serif}
+.gm-cat{padding:14px 22px 6px;font-size:13px;color:#5f6368}
+.gm-row{display:grid;grid-template-columns:40px minmax(0,1fr) 22px;gap:14px;padding:11px 16px 11px 18px;align-items:start;transition:background .8s ease}
+.gm-ltr{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font:500 18px/1 Roboto,sans-serif;overflow:hidden}
+.gm-l1{display:flex;justify-content:space-between;gap:8px;font-size:15.5px}
+.gm-l1 b{font-weight:500}
+.gm-l1 span{font-size:12px;color:#5f6368;padding-top:2px}
+.gm-l2{font-size:14px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gm-l3{font-size:14px;color:#5f6368;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gm-star svg{width:20px;height:20px;color:#9aa0a6;margin-top:22px}
+.cd-arrived .cd-new{max-height:90px;opacity:1;padding-block:11px;background:#E7F9EE}
+.cd-new .gm-l1 b,.cd-new .gm-l2{font-weight:700}
+.gm-fab{position:absolute;right:16px;bottom:34px;display:flex;align-items:center;gap:12px;height:56px;padding:0 20px 0 18px;border-radius:18px;background:#C2E7FF;color:#001D35;font-size:15px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.gm-fab svg{width:22px;height:22px}.gm-fab b{font-weight:500}
+.ios-note{position:absolute;left:9px;right:9px;top:10px;display:grid;grid-template-columns:38px 1fr;gap:11px;align-items:center;padding:12px 14px;border-radius:24px;background:rgba(246,246,248,.9);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);box-shadow:0 12px 34px rgba(0,0,0,.18);transform:translateY(-140%);transition:transform .75s var(--e);z-index:40;font-family:-apple-system,Inter,sans-serif}
+.cd-note-on .ios-note{transform:none}
+.ios-ic{width:38px;height:38px;border-radius:9px;background:#fff;display:grid;place-items:center;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+.ios-ic svg{width:26px;height:26px}
+.ios-l1{display:flex;justify-content:space-between;font-size:14px}.ios-l1 b{font-weight:600}.ios-l1 span{color:#8a8a8e;font-size:12.5px}
+.ios-l2{font-size:14px;line-height:1.3;color:#1c1c1e}
+
+.gm-bar{display:flex;justify-content:space-between;align-items:center;padding:56px 14px 6px;color:#444746}
+.gm-bar svg{width:23px;height:23px}
+.gm-bar .r{display:flex;gap:20px}
+.gm-scroll{padding:6px 20px 0;transition:transform 1.8s cubic-bezier(.45,.05,.25,1)}
+.gm-subj{margin:6px 0 16px;font:400 22px/1.32 Roboto,sans-serif;color:#1f1f1f;position:relative;padding-right:30px}
+.gm-tag{display:inline-block;padding:2px 6px;border-radius:4px;background:#e8eaed;font-size:12px;color:#444746;vertical-align:middle}
+.gm-s{position:absolute;right:0;top:4px}.gm-s svg{width:22px;height:22px;color:#5f6368}
+.gm-from{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:center;margin-bottom:16px;font-size:14.5px}
+.gm-from span{font-size:12px;color:#5f6368}
+.gm-from .r{display:flex;gap:16px;color:#444746}.gm-from .r svg{width:21px;height:21px}
+.gm-to{font-size:12.5px;color:#5f6368}
+.gm-body{font-size:15px;line-height:1.5;color:#202124}
+.gm-body p{margin:0 0 12px}
+.gm-body a{color:#1a5fd0;text-decoration:underline;font-weight:500}
+.gm-sig{margin-top:22px!important}
+.gm-fyi{color:#3c4043}
+.cd-link{transition:background .3s;border-radius:3px}
+.cd-link.is-pressed{background:#d2e3fc}
+.gm-actions{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;gap:12px;padding:12px 18px 30px;background:#fff;border-top:1px solid #eee;font-size:14px;color:#444746}
+.gm-actions span{flex:1;display:flex;justify-content:center;align-items:center;gap:6px;height:40px;border:1px solid #c4c7c5;border-radius:20px}
+.gm-actions svg{width:18px;height:18px}
+
+
+
+/* ---- the world: the desk at night behind the phone, with a little parallax under the pointer ---- */
+/* own compositor layers: the pointer parallax moves them without repainting the image every frame */
+.cd-env{position:absolute;inset:-2.5%;pointer-events:none;transform:translate(calc(var(--mx,0)*-12px),calc(var(--my,0)*-8px));will-change:transform}
+.cd-env-img{position:absolute;inset:0;background-color:#07090a;background-image:var(--glow),var(--img,none);background-position:center;background-size:cover;background-repeat:no-repeat;opacity:0;transition:opacity 1.2s ease;
+  --glow:radial-gradient(ellipse 28% 44% at 50% 50%,rgba(44,218,145,.15),rgba(44,218,145,.05) 60%,transparent)}
+.cd-has-env .cd-env-img{opacity:1}
+
+/* Cedar's original 390 × 844 screen coordinates. Keep these independent of portfolio styles. */
+.stg-cedar{--cd-green:#2CDA91;--cd-bg:#ECF4F2;--cd-surface:#F5FBF9;--cd-ink:#2B3732;--cd-body:#44504B;--cd-font:"Cedar Hind",Hind,sans-serif}
+.stg-cedar .p3-ui{font-family:"Cedar Roboto",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;isolation:isolate;color-scheme:light}
+.stg-cedar .p3-ui *{box-sizing:border-box}
+.stg-cedar .p3-ui button{appearance:none;border:0;margin:0;font:inherit;letter-spacing:normal;text-transform:none;cursor:pointer;color:inherit;text-align:inherit;background:none;padding:0}
+.stg-cedar .p3-ui button:focus-visible,.stg-cedar .p3-ui a:focus-visible{outline:2px solid #087747;outline-offset:4px}
+.stg-cedar .p3-ui.no-anim *{transition:none!important;animation:none!important}
+.stg-cedar .scr{z-index:1;pointer-events:none}
+.stg-cedar .scr.under{z-index:2}.stg-cedar .scr.top{z-index:3;pointer-events:auto}
+.stg-cedar .sb{height:64px;padding:0 36px 0 53px;color:#000;font:600 17px/1 -apple-system,"SF Pro Text",Arial,sans-serif;letter-spacing:0}
+.stg-cedar .sb .ic{gap:5px}.stg-cedar .sb svg{height:12px}
+.cd-island{position:absolute;z-index:55;top:14px;left:132px;width:126px;height:37px;border-radius:24px;background:#000;pointer-events:none;box-shadow:inset 0 0 0 1px #191919}
+.cd-island::before{content:"";position:absolute;left:10px;top:8px;width:62px;height:21px;border-radius:20px;background:#040404}
+.cd-island i{position:absolute;right:10px;top:12px;width:13px;height:13px;border:3px solid #090B15;border-radius:50%;background:radial-gradient(circle at 40% 35%,#41649a 0 13%,#171F46 24%,#050610 62%);box-shadow:0 0 0 1px #030408}
+.cd-off{background:#000}.cd-logo{display:block;border-radius:50%;flex:none}
+.stg-cedar .ios-note{top:62px;z-index:60;font-family:-apple-system,"SF Pro Text",Arial,sans-serif;text-align:left;transition:transform .65s var(--e),opacity .35s;background:rgba(246,246,248,.96);padding:14px;border-radius:22px;opacity:0;pointer-events:none}
+.stg-cedar .cd-note-on .ios-note{opacity:1;pointer-events:auto}
+.ios-ic{background:none!important;box-shadow:none!important}
+.ios-l2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cd-locked .ios-note{top:50%;transform:translateY(-50%) scale(.94);background:rgba(58,58,62,.92);color:#fff;opacity:0}
+.cd-locked .ios-l1 span{color:rgba(255,255,255,.55)}.cd-locked .ios-l2{color:rgba(255,255,255,.92)}
+.cd-locked.cd-note-on .ios-note{transform:translateY(-50%);opacity:1}
+
+/* Onboarding: a small dark card in the original pale field. */
+.cd-intro,.cd-done,.cd-ok{background:var(--cd-bg);font-family:var(--cd-font);color:var(--cd-ink);display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px}
+.cd-intro h2,.cd-done h2{margin:0;font:700 36px/48px var(--cd-font);letter-spacing:0;text-transform:none}
+.cd-intro h2 em,.cd-done h2 em,.cd-ok h2 em{font-style:normal;color:var(--cd-green)}
+.cd-intro p{margin:12px 0 0;font:400 16px/24px var(--cd-font);color:var(--cd-body);max-width:302px}
+.cd-spk{position:absolute;left:0;top:0;width:390px;height:220px;pointer-events:none}
+.cd-intro .cd-spk{top:170px}
+.cd-demo{position:relative;width:180px;height:108px;margin:252px 0 12px}
+.cd-mini{position:absolute;left:58px;top:4px;width:64px;height:88px;border-radius:8px;background:var(--cd-ink);display:grid;place-items:center;color:var(--cd-green);box-shadow:0 8px 14px -8px #2b373233;animation:cd-demo 3.2s linear infinite}
+.cd-mini svg{width:26px;height:26px}
+@keyframes cd-demo{0%,18%{transform:translateX(0) rotate(0deg) scale(1);opacity:1;animation-timing-function:cubic-bezier(.42,0,.75,.6)}40%{transform:translateX(14px) rotate(4deg) scale(1);opacity:1;animation-timing-function:cubic-bezier(.4,.118,.8,.5)}58%{transform:translateX(76px) rotate(14deg) scale(1);opacity:0;animation-timing-function:steps(1,end)}58.6%{transform:translateX(-6px) rotate(0deg) scale(.94);opacity:0;animation-timing-function:cubic-bezier(.16,1,.3,1)}82%,100%{transform:translateX(0) rotate(0deg) scale(1);opacity:1}}
+.cd-trail{position:absolute;left:98px;top:46px;width:62px;height:2px;background:linear-gradient(90deg,transparent,var(--cd-green));border-radius:2px;animation:cd-trail 3.2s linear infinite;opacity:0}
+@keyframes cd-trail{0%,36%{opacity:0;transform:scaleX(.2);animation-timing-function:cubic-bezier(.5,0,.75,0)}54%{opacity:1;transform:scaleX(1);animation-timing-function:cubic-bezier(.25,1,.5,1)}64%,100%{opacity:0;transform:scaleX(1)}}
+.stg-cedar .p3-ui .cd-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 20px;margin-top:32px;border-radius:999px;background:var(--cd-green);color:var(--cd-ink);font:400 16px/24px var(--cd-font);box-shadow:none}
+.stg-cedar .p3-ui .cd-go{min-height:34px;padding:0 24px}
+
+/* Match cards: 22-point screen insets, 24-point content insets, 32-point mark. */
+.cd-jobs{background:#282828;font-family:var(--cd-font)}
+.cd-photo{position:absolute;inset:0;background:url('../img/cedar-workspace.jpg') center top/auto 110% no-repeat}
+.cd-photo::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.64)}
+.cd-deck{position:absolute;left:22px;right:22px;top:162px;height:434px}
+.cd-card{--k:0;--dx:0px;--dy:0px;--tilt:0deg;--p:0;position:absolute;left:0;right:0;top:0;height:436px;border-radius:8px;background:var(--cd-surface);color:var(--cd-ink);transform:translate(var(--dx),calc(var(--k)*3px + var(--dy))) rotate(var(--tilt)) scale(calc(1 - var(--k)*.012));transform-origin:50% 0;z-index:calc(10 - var(--k));visibility:visible;opacity:clamp(0,calc(2 - var(--k)),1);transition:transform .55s cubic-bezier(.22,1,.36,1),opacity .45s ease,top .65s var(--e2),height .65s var(--e2),box-shadow .3s ease;will-change:transform;box-shadow:0 2px 8px #00000012}
+.cd-card.cd-front,.cd-card.cd-next{visibility:visible;opacity:1}
+.cd-card.cd-next{pointer-events:none}
+.cd-cview{position:relative;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:none;height:100%;border-radius:inherit}
+.cd-cview::-webkit-scrollbar{display:none}
+.cd-cbody{padding:24px;transition:transform 1.2s cubic-bezier(.45,.05,.25,1)}
+.cd-head{display:flex;justify-content:space-between;align-items:center;height:32px}
+.cd-head>svg{width:32px;height:32px;flex:none}
+/* The X sits on the card, outside the scrolling view: it appears with the specifications and stays put while they scroll. */
+.stg-cedar .p3-ui .cd-x{position:absolute;top:24px;right:16px;z-index:6;width:32px;height:32px;display:grid;place-items:center;color:var(--cd-ink);border-radius:50%;background:var(--cd-surface);opacity:0;pointer-events:none;transition:opacity .3s ease}
+.stg-cedar .p3-ui .cd-card.xp .cd-x{opacity:1;pointer-events:auto}
+.cd-x svg{width:20px;height:20px}
+.cd-card h3{margin:12px 0 0;font:600 14px/20px var(--cd-font);letter-spacing:0;color:var(--cd-ink);text-transform:none}
+.cd-card p{margin:4px 0 0;font:400 15px/20px var(--cd-font);letter-spacing:0;color:var(--cd-body)}
+.cd-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:11px}
+.cd-list li{display:flex;align-items:center;gap:10px;min-height:20px;font:400 14px/20px var(--cd-font);color:var(--cd-body);opacity:0;transform:translateY(3px);transition:opacity .3s,transform .4s var(--e)}
+.cd-list li.on{opacity:1;transform:none}
+.cd-list li svg{width:20px;height:20px;flex:none}
+.stg-cedar .p3-ui .cd-spec{display:flex;align-items:center;justify-content:center;width:100%;height:34px;margin-top:24px;border-radius:999px;background:var(--cd-green);color:var(--cd-ink);font:500 16px/24px var(--cd-font)}
+.cd-details{padding-top:12px}
+.cd-card:not(.xp) .cd-details{display:none}
+.cd-card.xp{top:-98px;height:756px!important;transform:none!important;z-index:20}
+.cd-card.xp .cd-spec{display:none}
+.cd-xp .cd-card:not(.xp){visibility:hidden}
+.cd-xp .cd-votes{opacity:0;transform:translateY(16px);pointer-events:none}
+.cd-details h4{margin:24px 0 12px;font:400 16px/24px var(--cd-font);color:var(--cd-body)}
+.cd-details h5{margin:12px 0 6px;font:400 14px/20px var(--cd-font);color:var(--cd-body)}
+.cd-kv{display:flex;flex-direction:column;gap:10px;font:400 13px/20px var(--cd-font);color:var(--cd-body)}
+.cd-kv span{display:flex;align-items:center;gap:8px}
+.cd-kv svg{width:20px;height:20px;flex:none;fill:none;stroke:#50C9A1;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.cd-kv em{font-style:normal;padding:4px 12px;border-radius:99px;background:var(--cd-bg)}
+.cd-kv.col em{padding:0;background:none}
+.cd-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cd-chips span{padding:5px 14px;border-radius:99px;background:var(--cd-bg);font:400 13px/20px var(--cd-font);color:var(--cd-body)}
+.cd-bul{margin:0;padding-left:17px;font:400 13px/19px var(--cd-font);color:var(--cd-body)}
+.cd-bul li{margin-bottom:5px}
+.cd-card .cd-about{font:400 13px/19px var(--cd-font);margin:0 0 12px}
+/* Drag and throw are driven per frame from cedar.js; .dragging hands the transform over to the script. */
+.cd-card.drag,.cd-card.nudge{box-shadow:0 18px 36px -14px #0006}
+.cd-card.dragging{transition:box-shadow .3s ease}
+.cd-card.go-r,.cd-card.go-l{visibility:visible}
+.cd-stamp{position:absolute;top:58px;padding:7px 12px 3px;border:2px solid;border-radius:6px;font:600 17px/20px var(--cd-font);letter-spacing:.06em;text-transform:uppercase;opacity:0;z-index:5;transition:opacity .15s}
+.cd-stamp.yes{left:18px;color:#10935c;border-color:var(--cd-green);transform:rotate(-13deg);background:#f5fbf9ed}
+.cd-stamp.nope{right:18px;color:#c74b53;border-color:#F1767D;transform:rotate(13deg);background:#f5fbf9ed}
+.cd-card.to-r .cd-stamp.yes,.cd-card.to-l .cd-stamp.nope{opacity:var(--p)}
+.cd-finger{position:absolute;left:50%;top:46%;width:38px;height:38px;margin:-19px;border-radius:50%;background:#ffffff50;box-shadow:0 0 0 1px #ffffffcc;z-index:6;pointer-events:none;transition:transform .3s var(--e),opacity .3s ease;animation:cd-press .22s var(--e) both}
+@keyframes cd-press{from{transform:scale(1.25);opacity:0}}
+.cd-finger.lift{transform:scale(1.3);opacity:0;animation:none}
+/* Each card carries its own thumbs, just under it: they swipe away with the card, and the last card takes them along. */
+.cd-votes{position:absolute;left:0;right:0;top:calc(100% + 14px);display:flex;justify-content:center;gap:32px;transition:opacity .4s,transform .5s var(--e);z-index:12}
+.cd-card:not(.cd-front):not(.gone) .cd-votes{opacity:0;pointer-events:none}
+.stg-cedar .p3-ui .cd-v{position:relative;width:72px;height:72px;border-radius:50%;background:var(--cd-surface);display:grid;place-items:center;box-shadow:0 2px 8px #00000014}
+.cd-v svg{width:32px;height:32px}.stg-cedar .p3-ui .cd-v.down{color:#F1767D}.cd-v.down svg{transform:rotate(180deg) scaleX(-1)}.stg-cedar .p3-ui .cd-v.up{color:var(--cd-green)}
+.cd-v.hit{animation:cd-hit .5s cubic-bezier(.34,1.5,.64,1)}
+@keyframes cd-hit{30%{transform:scale(.88)}65%{transform:scale(1.05)}}
+.cd-bg-note{position:absolute;left:22px;right:22px;top:70px;display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;background:var(--cd-surface);color:var(--cd-ink);font:500 13px/20px var(--cd-font);transform:translateY(-140%);opacity:0;transition:transform .6s var(--e),opacity .35s;z-index:20;box-shadow:0 6px 20px #0002}
+.cd-bg-note.on{transform:none;opacity:1}
+
+/* Paywall: measured directly from Paywall - Mobile.png (390 × 847). */
+.cd-done .cd-logo.big{margin:92px 0 40px;width:64px;height:64px;filter:none}
+.cd-done h2{font-size:38px;line-height:48px;font-weight:700;letter-spacing:.3px}
+.cd-done .cd-summary{margin:20px 0 0;font:400 15px/24px "Cedar Raleway",Raleway,sans-serif;color:var(--cd-ink);max-width:342px;min-height:48px}
+.cd-more{margin-top:67px;align-self:stretch;padding:16px 24px 24px;border-radius:8px;background:var(--cd-surface);text-align:left;box-shadow:none}
+.cd-more h3{margin:0;font:700 32px/40px var(--cd-font);letter-spacing:0;color:var(--cd-ink);text-transform:none}
+.cd-more p{margin:0;font:400 24px/36px "Cedar Raleway",Raleway,sans-serif;color:#4E5655}
+.cd-more ul{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:16px;font:400 16px/20px "Cedar Raleway",Raleway,sans-serif;color:var(--cd-ink)}
+.cd-more li{display:flex;gap:10px;align-items:center;white-space:nowrap}
+.cd-more li svg{width:20px;height:20px;flex:none}
+.stg-cedar .p3-ui .cd-more .cd-btn{margin-top:42px;height:40px;min-height:40px;padding:0 20px;font:400 16px/24px var(--cd-font)}
+.cd-done.top .cd-logo,.cd-done.top h2,.cd-done.top .cd-summary,.cd-done.top .cd-more{animation:cd-rise2 .7s var(--e) both}
+.cd-done.top h2{animation-delay:.08s}.cd-done.top .cd-summary{animation-delay:.14s}.cd-done.top .cd-more{animation-delay:.22s}
+@keyframes cd-rise2{from{opacity:0;transform:translateY(12px)}}
+/* greenhouse */
+.cd-gh{background:#fff;font-family:Inter,sans-serif;color:#1f2d3d}
+.gh-bar{position:relative;z-index:3;display:flex;align-items:center;justify-content:center;gap:6px;margin:54px 14px 0;height:34px;border-radius:10px;background:#F1F2F4;font-size:13px;color:#555}.gh-bar svg{width:12px}
+.gh-scroll{padding:22px 22px 80px;transition:transform 1.2s cubic-bezier(.45,.05,.25,1)}
+.gh-co b{font:800 22px/1 Inter,sans-serif;letter-spacing:-.03em}.gh-co i{color:#ff5a5f;font-style:normal}
+.gh-scroll h2{margin:16px 0 6px;font:700 19px/1.3 Inter,sans-serif}
+.gh-loc{margin:0 0 20px;color:#6b7785;font-size:13px}
+.gh-scroll h3{margin:0 0 4px;font:700 16px/1 Inter,sans-serif}
+.gh-req{margin:0 0 14px;font-size:11.5px;color:#b03a2e}
+.gh-f{display:grid;gap:6px;margin-bottom:13px}
+.gh-f span{font-size:12.5px;font-weight:600;color:#33404d}
+.gh-f em{font-style:normal;display:block;padding:9px 11px;border:1px solid #cdd3da;border-radius:6px;font-size:13.5px;color:#1f2d3d;background:#fff}
+.gh-f.tall em{line-height:1.45}
+.gh-f.file em{display:flex;align-items:center;gap:8px;background:#F4F8F6;border-color:#bfe0cf}
+.gh-f.file i{font-style:normal;font-size:10px;font-weight:700;color:#fff;background:#E5533D;padding:3px 5px;border-radius:3px}
+.gh-submit{display:grid;place-items:center;height:46px;margin-top:8px;border-radius:6px;background:#24A47F;color:#fff;font-weight:600;font-size:14.5px}
+.gh-submit.busy{color:transparent;background:#24A47F radial-gradient(circle,#fff 2.5px,transparent 3px) 50% 50%/14px 14px repeat-x;animation:rv-busy .8s linear infinite}
+@keyframes rv-busy{to{background-position:64px 50%}}
+.gh-foot{margin:18px 0 0;text-align:center;font-size:11.5px;color:#8a95a1}
+/* Success: original mascot, type hierarchy, confetti positions and fine streamers. */
+.cd-ok{padding:0 24px}
+.cd-ok .cd-logo.big{order:-1;margin:92px 0 0;width:64px;height:64px;filter:none}
+.cd-congrats{margin-top:46px;padding:0 12px;border-radius:99px;background:var(--cd-surface);font:500 16px/24px var(--cd-font);color:var(--cd-ink)}
+.cd-ok h2{margin:16px 0 0;font:600 44px/48px var(--cd-font);letter-spacing:0;color:var(--cd-ink);text-transform:none}
+.cd-ok p{margin:32px 0 0;font:400 18px/24px var(--cd-font);color:var(--cd-body);max-width:264px}
+.cd-streamers{position:absolute;inset:0;width:390px;height:844px;pointer-events:none;fill:none;stroke-width:1.5;stroke-linecap:round}
+/* Confetti and streamers are thrown per frame from cedar.js (celebrate). */
+.cd-streamers path{stroke-dasharray:240;stroke-dashoffset:240;transform-box:fill-box;transform-origin:center}
+.cd-confetti{position:absolute;inset:0;pointer-events:none}
+.cd-confetti i{position:absolute;background:var(--c);opacity:0;transform:rotate(var(--r))}
+.cd-confetti i.s{width:7px;height:7px}.cd-confetti i.q{width:13px;height:13px;transform:rotate(17deg)}
+.cd-confetti i.r{width:12px;height:4px}.cd-confetti i.b{width:7px;height:12px}
+.cd-confetti i.d{width:12px;height:12px;border-radius:50%}.cd-confetti i.e{width:8px;height:12px;border-radius:50%;transform:rotate(18deg)}
+.cd-confetti i{will-change:transform,opacity}
+.cd-ok.top .pop{animation:cd-pop .85s cubic-bezier(.34,1.4,.64,1) .1s both}
+@keyframes cd-pop{from{transform:scale(.65) rotate(-12deg);opacity:0}}
+.cd-ok.top .cd-congrats,.cd-ok.top h2,.cd-ok.top p{animation:cd-rise2 .8s var(--e) both}
+.cd-ok.top .cd-congrats{animation-delay:.25s}.cd-ok.top h2{animation-delay:.35s}.cd-ok.top p{animation-delay:.45s}
+.cd-gh::before{content:"";position:absolute;left:0;right:0;top:0;height:96px;background:#fff;z-index:2;box-shadow:0 1px 0 #eceef1}
+.stg-cedar .p3-ui .gh-submit{display:grid;place-items:center;width:100%;height:46px;margin-top:8px;border-radius:6px;background:#24A47F;color:#fff;font:600 14.5px/20px Inter,sans-serif;text-align:center}
+.stg-cedar .p3-ui .gh-submit.busy{color:transparent}
+
+/* The inbox is part of the flow. Peripheral messages soften without blurring Cedar's message. */
+.cd-inbox{background:#fff}
+.gm-top{padding:64px 16px 8px}
+.gm-search{height:48px;border-radius:24px;background:#F3F6FC}
+.gm-me{background:#738373;font-family:inherit;font-size:14px}
+.gm-cat{padding:12px 20px 8px;font-size:13px;color:#606367}
+.gm-category{display:flex;align-items:center;gap:16px;padding:12px 20px;font:400 14px/20px "Cedar Roboto",Roboto,sans-serif}
+.gm-category-icon{display:grid;place-items:center;width:32px;flex:none}
+.gm-category-icon svg{width:24px;height:24px;fill:currentColor}
+.gm-category .social{color:#4285f4}.gm-category .promotions{color:#34a853}
+.gm-category>div{flex:1;min-width:0}.gm-category b,.gm-category div span{display:block}
+.gm-category b{font-weight:600}.gm-category div span{font-size:13px;color:#6a6d71}
+.gm-category em{border-radius:99px;padding:1px 8px;color:#fff;background:#4285f4;font-style:normal;font-size:11px;white-space:nowrap}
+.gm-category:has(.promotions) em{background:#34a853}
+.stg-cedar .p3-ui .cd-inbox-open{width:100%;display:block}
+.gm-row{grid-template-columns:40px minmax(0,1fr);position:relative;gap:16px;padding:14px 16px;min-height:92px}
+.gm-message{min-width:0}.gm-l1{align-items:baseline;font-size:16px;line-height:20px;gap:8px}.gm-l1 b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:inherit}
+.gm-l1 span{white-space:nowrap;font-size:11px;color:#1f1f1f}
+.gm-l2,.gm-l3{font-size:14px;line-height:20px;padding-right:25px}
+.cd-new .gm-l1 b,.cd-new .gm-l2{font-weight:700}
+.gm-star{position:absolute;right:17px;top:35px}.gm-star svg{margin:0;width:20px;height:20px;color:#b8babc}
+.cd-new .gm-star svg{color:#F4B400;fill:#F4B400}.cd-new .gm-star path{fill:currentColor;stroke-width:0}
+.gm-muted,.gm-category{filter:blur(2px);opacity:.75;pointer-events:none}
+.gm-avatar{display:grid;place-items:center;width:40px;height:40px;color:white;background:#8b9e91;border-radius:50%;font:500 18px/1 "Cedar Roboto",Roboto,sans-serif}
+.gm-avatar.av2{background:#b89991}.gm-avatar.av3{background:#65bbc8}.gm-avatar.av4{background:#51777c}
+.gm-bar{height:108px;padding:64px 18px 16px;position:relative;z-index:3;background:#fff}
+.stg-cedar .p3-ui .gm-bar button{display:grid;place-items:center;width:28px;height:28px}
+.gm-viewport{position:absolute;top:108px;bottom:82px;left:0;right:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:none}
+.gm-viewport::-webkit-scrollbar{display:none}
+.gm-scroll{padding:8px 20px 24px}
+.gm-subj{font:400 22px/29px "Cedar Roboto",Roboto,sans-serif;margin:0 0 20px}
+.gm-from{grid-template-columns:38px 1fr auto;gap:10px;font-size:14px;margin-bottom:18px}
+.gm-from .r{gap:12px}.gm-body{font:400 14px/20px "Cedar Roboto",Roboto,sans-serif}
+.gm-body p{margin-bottom:14px}.gm-body ol{margin:0 0 14px;padding-left:18px}.gm-body li{padding-left:2px;margin-bottom:10px}
+.gm-actions{height:82px;padding:10px 18px 32px;gap:12px}
+.gm-actions span{height:40px}
+.stg-cedar .g3-glare{opacity:.25}
+.stg-cedar:not(.on) *{animation-play-state:paused!important}
+
+/* Native notification: compact content, generous outer inset, no padding inherited from button resets. */
+.stg-cedar .p3-ui .ios-note{left:12px;right:12px;top:64px;grid-template-columns:32px minmax(0,1fr);gap:10px;padding:12px 14px;border-radius:20px;background:rgba(247,248,247,.94);color:#1c1c1e;font-family:-apple-system,"SF Pro Text",Arial,sans-serif;text-align:left;box-shadow:0 6px 22px #0000001c;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+.stg-cedar .ios-ic,.stg-cedar .ios-ic .cd-logo{width:32px!important;height:32px!important}
+.stg-cedar .ios-l1{align-items:baseline;font-size:13px;line-height:18px;gap:8px}
+.stg-cedar .ios-l1 b{font-weight:600}.stg-cedar .ios-l1 span{font-size:11px;line-height:18px;color:#757b77}
+.stg-cedar .ios-l2{font-size:13px;line-height:17px;color:#333a35;margin-top:1px}
+.stg-cedar .p3-ui.cd-locked .ios-note{top:50%;bottom:auto;transform:translateY(calc(-50% + 16px));background:rgba(239,245,240,.88);color:#1c1c1e;opacity:0}
+.stg-cedar .p3-ui.cd-locked.cd-note-on .ios-note{transform:translateY(-50%);opacity:1}
+.stg-cedar .cd-locked .ios-l1 span{color:#67746b}.stg-cedar .cd-locked .ios-l2{color:#333a35}
+/* Mountain lock screen. The image is local, so the first frame never waits for a remote photograph. */
+.cd-off{background:#263b34 url('../img/cedar-mountain.jpg') center/cover no-repeat}
+.cd-off::before{content:"";position:absolute;inset:0;background:linear-gradient(#11221d30,transparent 38%,#061e142b)}
+.cd-lock{position:absolute;left:0;right:0;top:78px;display:flex;flex-direction:column;align-items:center;color:#fff;text-shadow:0 2px 18px #0b211d18;font-family:-apple-system,"SF Pro Display",Arial,sans-serif}
+.cd-lock-icon{width:22px;height:22px;margin-bottom:18px}
+.cd-lock>span{font-size:18px;line-height:24px;font-weight:500}
+.cd-lock>b{font-size:92px;line-height:104px;font-weight:700;letter-spacing:-4px}
+.cd-home-indicator{position:absolute;left:128px;bottom:9px;width:134px;height:5px;background:#fff;border-radius:99px;opacity:.9}
+
+.cd-card.xp .cd-cview{touch-action:pan-y}
+.cd-card.xp [data-drag]{touch-action:pan-y;cursor:auto}
+
+.cd-card:not(.xp) .cd-cbody{display:flex;flex-direction:column;min-height:100%}
+.stg-cedar .p3-ui .cd-card:not(.xp) .cd-spec{margin-top:auto;flex-shrink:0}
+/* Tapping the notification opens it in place: no press effect moves or shrinks it. */
+.stg-cedar .p3-ui .ios-note.is-pressed{transform:none!important}
+.stg-cedar .p3-ui.cd-locked .ios-note.is-pressed{transform:translateY(-50%)!important}
+.stg-cedar .p3-ui.cd-locked.cd-note-leaving .ios-note{transform:translateY(-50%);opacity:0}

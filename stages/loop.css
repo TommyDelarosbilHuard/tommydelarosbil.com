@@ -1,0 +1,63 @@
+/* LANDR loops (loop.js): a plate over the screenshot, in image pixels; the person's cursor and thoughts, in block pixels. */
+.stg-world.lp{z-index:1;opacity:0;transition:opacity .3s ease;--lp-type:"Avenir Next","Nunito Sans",Avenir,"Segoe UI",sans-serif}
+.stg-world.lp.ready{opacity:1}
+.lp-plate{position:absolute;left:0;top:0;width:2000px;height:1125px;transform-origin:0 0;pointer-events:none}
+.lp-plate>*{position:absolute}
+.lp-pic{inset:0;background-size:2000px 1125px;background-repeat:no-repeat}
+.lp-svg{left:0;top:0;overflow:visible}
+
+/* chips: a chosen answer greys the chip (multiply), an unchosen one goes back to white (colour dodge) with its outline */
+.lp-fill,.lp-ring-sel,.lp-ring-off{display:block;border-radius:22px;opacity:0;box-sizing:border-box}
+.lp-fill.mul{background:#E3E7EC;mix-blend-mode:multiply}
+.lp-fill.dodge{background:rgb(28,24,19);mix-blend-mode:color-dodge}
+.lp-ring-sel{border:2px solid #E3E7EC}
+.lp-ring-off{border:1.5px solid #E2E5E8}
+.lp-cover{display:block}
+.lp-wave rect{fill:#E1E3E6}.lp-wave rect.pl{fill:#666A77}
+.lp-time{font:500 14px var(--lp-type);fill:#6E7176}
+
+/* Mastering Revisions: the modal's body scrolls (a crop of the screenshot, the lows drawn below its edge) */
+.lp-body{overflow:hidden}
+.lp-scroll{position:absolute;left:0;top:0;background:#fff}
+.lp-scroll>*{position:absolute;display:block}
+.lp-crop{background-size:2000px 1125px;background-repeat:no-repeat}
+.lp-thumb{position:absolute;display:block;width:6px;border-radius:3px;background:rgba(0,0,0,.28);opacity:0}
+.lp-sub{font:400 17.5px var(--lp-type);fill:#1B2638}
+.lp-chip{fill:#fff;stroke:#DFE2E7;stroke-width:1.5}
+.lp-chip-on{fill:#E3E7EC}
+.lp-chip-t{font:400 19px var(--lp-type);fill:#26313F}
+
+/* Waitzine: the carousel, the header, the dots */
+.lp-pages{overflow:hidden}
+.lp-track{position:absolute;inset:0;display:flex}
+.lp-spin{will-change:transform}
+.lp-page{position:relative;flex:0 0 438px;height:655px}
+.lp-page svg{display:block}
+.lp-page i{position:absolute;display:block}
+.lp-p1{background-size:2000px 1125px;background-repeat:no-repeat}
+.lp-hover{border-radius:21.5px;background:rgba(255,255,255,.22);opacity:0}
+.lp-h{font:600 31px var(--lp-type);fill:#fff;letter-spacing:-.005em}
+.lp-p{font:400 19.5px var(--lp-type);fill:#F2F5F8}
+.lp-cta{font:600 17px var(--lp-type);fill:#061C2D}
+.lp-art-t{font:600 10.5px var(--lp-type);letter-spacing:.16em;fill:#7FE3E5}
+.lp-art-t.dim{fill:#fff;fill-opacity:.6}
+.lp-art-n{font:500 11.5px var(--lp-type);fill:#fff;font-variant-numeric:tabular-nums}
+.lp-art-n.teal{fill:#7FE3E5;fill-opacity:1}
+.lp-ab{font:600 11.5px var(--lp-type);fill:#fff;fill-opacity:.8}.lp-ab.on{fill:#061C2D;fill-opacity:1}
+.lp-proc{font:400 17.5px var(--lp-type);fill:#3A4858}
+.lp-pct,.lp-stage{font:500 17px var(--lp-type);fill:#0B1420}
+/* preview ready: the banner turns the buttons' cyan, its words their dark blue, and Listen replaces the menu */
+.lp-ready .lp-pct,.lp-ready .lp-stage{fill:#061C2D}
+.lp-ready-sub{font:400 15px var(--lp-type);fill:#061C2D;opacity:.78}
+.lp-listen-t{font:600 15px var(--lp-type);fill:#061C2D}
+.lp-svg .lp-arrow circle,.lp-svg .lp-dot,.lp-svg .lp-dot-on{transition:none}
+
+/* the person */
+.lp-cur{position:absolute;left:0;top:0;width:clamp(18px,calc(var(--W)*.018),24px);height:clamp(18px,calc(var(--W)*.018),24px);margin:-3px 0 0 -5px;z-index:5;pointer-events:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));transition:opacity .4s ease}
+.lp-cur svg{width:100%;height:100%;fill:#111;stroke:#fff;stroke-width:1.5;stroke-linejoin:round;transition:transform .12s ease;transform-origin:20% 10%}
+.lp-cur.down svg{transform:scale(.84)}
+.lp-think{position:absolute;left:0;top:0;z-index:6;pointer-events:none;width:max-content;max-width:calc(var(--W)*.62)}
+.lp-think b{display:block;padding:.5em .85em .55em;border-radius:1.05em 1.05em 1.05em .25em;background:#16823F;color:#fff;font:700 clamp(11px,calc(var(--W)*.0108),15px)/1.25 "Nunito Sans",sans-serif;box-shadow:0 8px 20px rgba(0,0,0,.28);opacity:0;transform:scale(.7);transform-origin:0 0;transition:opacity .25s ease,transform .45s cubic-bezier(.16,1,.3,1)}
+.lp-think.l b{border-radius:1.05em .25em 1.05em 1.05em;transform-origin:100% 0}
+.lp-think.on b{opacity:1;transform:none}
+.lp-ring{z-index:4}
