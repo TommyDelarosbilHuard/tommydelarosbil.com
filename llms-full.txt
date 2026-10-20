@@ -1,0 +1,625 @@
+# Tommy Delarosbil
+
+> Product Designer · Toronto, Ontario, Canada. Product designer, 15+ years. AI agents people use, design systems AI can follow, prototypes in code. Case studies from Cedar, LANDR, Groupe Dynamite.
+
+I design where intelligence shows up. Product Designer & Leader. Craft, System & AI-Native.
+
+Product designer for 15+ years across music, commerce, hospitality, insurance and education. Lately: AI-native products, design systems that AI can follow, and prototypes built in code. Based in the Toronto area. Husband and dad.
+
+- Website: https://www.tommydelarosbil.com/
+- LinkedIn: https://www.linkedin.com/in/tommydelarosbil/
+- Email: delarosbil.t@gmail.com
+- Expertise: AI-native product design, Agentic AI, Design systems, UX research, Prototyping in code, Product strategy, Design leadership
+
+## Case studies
+
+- [Intelligence that searches for you](https://www.tommydelarosbil.com/work/nexgen/): NexGen News · 2026 · Solo · 10 hours. News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
+- Designing the system before the product (Shipped, white-label, password on request): AI sped up the team's output, and its drift. A token and rule system made consistency keep up with a two-week cadence.
+- [The agent lives in your inbox](https://www.tommydelarosbil.com/work/cedar/): Cedar · 2024–25 · Staff Product Designer · 6 weeks. People job hunting while working full time don't have room for another app. With the CEO and CTO, I put the AI agent in their inbox, gave it a voice with strict rules, and kept a small web app for what email can't do. 81% daily open rate, 5% paid conversion.
+- We stopped making chat the destination (Shipped, white-label, password on request): Live chat testing showed operators liked the intelligence, not the chat. The team deprecated chat and brought intelligence into the work instead.
+- [From 20% task success to 80%](https://www.tommydelarosbil.com/work/mastering-revisions/): LANDR · 2021 · Senior Product Designer · ~3 weeks. Pros churned because LANDR's mastering gave them almost no control. After seven interviews with churned Pros, I designed a separate revision tool that asks plain questions, instead of complicating Mastering with technical jargon. One failed test and one extra week later: 80% task success and $147K in incremental revenue.
+- [The wait became the product](https://www.tommydelarosbil.com/work/waitzine/): LANDR · 2020 · Senior Product Designer · ~2 weeks. 51% of new users left before hearing their first master. Making mastering faster would take months for under 5%, so I redesigned the wait instead: a progress bar built for perception, and a magazine to learn in the meantime. +79% songs mastered and $493K in incremental revenue.
+- [A new checkout in four weeks, without testing](https://www.tommydelarosbil.com/work/payment-gateway/): Groupe Dynamite · 2024 · Senior Product Designer · 4 weeks. A new payment API in four weeks, no time for user testing, and most leaders expected failure. I refined the design daily with the PM and developers, iterated every screen inside its user flow, and split the release in two to protect conversion. Handed off on time, across two brands.
+- [The table at 45 degrees](https://www.tommydelarosbil.com/work/beer-table/): William J. Walter · 2017 · Independent consultant · 3 hours. A Quebec City sausage shop wanted to sell more beer. Sitting by the door for two hours, I saw people walk straight to the counter and notice the beer only after paying. I turned one table 45 degrees and moved beer around the space. Beer sales rose 15%.
+
+## Experience
+
+- 2025–26 · Compass Digital, Senior Product Designer · AI Insights > CTO Office: Best contribution and impact hidden for confidentiality. Found ~3M operator hours a year to automate. Built a GPT research workflow: evidence that stays current.
+- 2024–25 · Cedar, Staff Product Designer · Agentic AI: Put the AI agent in the inbox: 81% daily opens, 5% paid.
+- 2022–24 · Groupe Dynamite, Senior Product Designer · Commerce apps: New checkout in four weeks, no testing. On time. Two apps, no direction. Left them one.
+- 2021–22 · Korbit, Lead Product Designer · AI EdTech: AI feedback in a Python IDE, before ChatGPT.
+- 2019–21 · LANDR, Senior Product Designer · Music tech: Turned a two-minute wait into +79% songs mastered, $493K a year. First test failed at 20%. One more week: 80%. $2M+ a year across experiments.
+- 2019–21 · NumériQ / Québecor, Lead UX & UI · Media: Led 5 designers. Design moved into the sprints.
+- 2018–19 · Intact, Lead UX Strategist · Insurance: Led 6 designers. Design thinking into problem framing.
+- 2017–18 · Aeroplan, Senior Product Designer · Loyalty: One initiative: $310K+ a year.
+- 2017 · A sausage shop, Side project: Turned one table 45°: beer sales +15%.
+- 2015–17 · Scolab, Senior Product Designer · EdTech: A math textbook, rebuilt for iPad.
+
+---
+
+## Intelligence that searches for you
+
+https://www.tommydelarosbil.com/work/nexgen/
+
+NexGen News · 2026 · Solo · 10 hours · Exploration · Not yet shipped
+
+News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
+
+### Short version
+
+#### Approach · I wasn't looking for more news. I was looking for understanding.
+
+So I built the intelligence before the interface, and spent ten hours on why it should exist.
+
+#### The problem · One story, dozens of headlines.
+
+And every visit, you start over.
+
+#### The bet · Follow the question.
+
+Don't give people more news. Help them uncover the story.
+
+#### Thinking · The search is interactive.
+
+Watch the agent work. Tap a cluster to see what it's reading.
+
+#### Under the hood · A real engine, not a mockup.
+
+Real sources, every quote checked, memory kept in an Obsidian vault.
+
+#### While it reads · The wait is the welcome.
+
+No spinner. Explore what others already uncovered.
+
+#### First update · Your first files.
+
+Each file is one development, with its sources, its dates, and how far the evidence goes.
+
+#### Home · Home is your question.
+
+No feed. One question, and what changed since you left.
+
+#### What changed · Only what's new.
+
+Mark what you already knew. It remembers, and never repeats it.
+
+#### Next · One question. Less noise. More understanding.
+
+Next: live inquiries, tested with real people. I'd measure one thing: connections they say they would have missed.
+
+### Long version
+
+#### Origin · I wasn't looking for more news. I was looking for understanding.
+
+For a year I searched for a better AI-native workflow. Then a friend introduced me to one person's method, and it changed my craft. The answer already existed. I had no way to find it.
+
+**You don't know what you don't know.**
+
+#### Strategy · The brief as a start.
+
+- **Trust in news is lost. **So make evidence inspectable. Every claim links to dated sources. Repeated reporting never counts as corroboration. Nothing is sponsored.
+- **News landscape is fragmented. **So one question, not many topics. You follow one inquiry. The agent connects scattered sources into one picture, and stops when nothing changed.
+- **Wants signal. **So reasoning, not popularity. Discovery comes from how other people connected the dots, not from what holds attention.
+
+#### Method · Build the intelligence before the interface.
+
+- **Socratic, not surveyed.** I challenged my own hypothesis and strategy with AI. Interviews were deferred: a 10-hour trade-off.
+- **Useful engine before beautiful.** A working research engine came first. On my own year-long question, it found angles I'd missed.
+- **Smallest input, most value.** One inquiry that keeps evolving replaces endless new searches and repeated exposure.
+- **AI for speed, me for taste.** Logic first, then my design system and references carried it to high fidelity.
+
+#### Trade-offs · Ten hours, spent on why it should exist.
+
+- **Polished the first visit.** The returning-user home can wait.
+- **Built the engine.** User interviews come next.
+- **Daily updates, built but off.** The demo proves first value.
+- **Connectors, later.** X & YouTube blocks automated access.
+
+**One question. Less noise. More understanding.**
+
+#### The problem · One story, dozens of headlines.
+
+News moves on and you start over. Every visit, you rebuild what you knew and guess what's genuinely new.
+
+One story in five framings overloads attention, and the conflicting takes create dissonance. People resolve it by tuning out, or by keeping the version that already agrees with them.
+
+#### Trust · People trust AI news even less.
+
+37% trust news most of the time. 20% trust news from AI chatbots. The brief asks AI to repair a trust problem. People trust AI news even less. *(Reuters Institute, Digital News Report 2026)*
+
+#### The bet · Follow the question.
+
+Don't give people more news. Help them uncover the story. Say what you're trying to understand. NexGen News cuts through the noise and connects millions of dots into a meta perspective made for you.
+
+Saying a question is faster than typing it, so voice comes first. Typing is the fallback. Every update answers: what's new, why it matters to you, what you're missing, and the evidence.
+
+#### Thinking · The search is interactive.
+
+Sources gather as a living field of dots while your inquiry progresses. Tap a cluster to see what the agent is looking at as it scans the web.
+
+#### Under the hood · A real engine, not a mockup.
+
+Each inquiry fetches real public sources, checks every quote against the original text, and writes what it learns into an Obsidian vault. The next visit starts from that memory.
+
+No guesswork. Designing on top of a working engine grounds every UX and product decision in what the system can actually do. The graph is the real vault after four inquiries: 180 notes, 243 links.
+
+#### While it reads · The wait is the welcome.
+
+The inquiry is real and takes several minutes. Instead of a spinner, you browse closely related files other people have already compiled. It's also a good moment to show, step by step, how the app works.
+
+#### Inquiry ready · It lands. You choose when.
+
+Community files show how others connected the dots around closely related questions, and may already deepen your understanding. Open your first inquiry when you're done exploring. Community files always wait at the end of your own.
+
+#### First update · Your first files.
+
+Each file is one development, with its sources, its dates, and how far the evidence goes.
+
+#### Home · Home is your question.
+
+No feed. Your question, your last update, and one button to check what changed.
+
+I reached the 10-hour limit here. I focused on onboarding and a preview of the next visit, so the screens from this point are unpolished. I'd replace the "Check what changed" button with a different interaction pattern.
+
+#### What changed · Only what's new.
+
+Each story says how far its evidence goes. Mark something you already knew and it won't come back as news.
+
+The vision: the engine searches for new reporting on your inquiry once a day, in the background, so something new arrives without effort. A native notification says when it's ready.
+
+#### Memory · It remembers what you told it.
+
+Your marks shape the next update, so nothing repeats. Each visit brings a fresh perspective on what you want to understand.
+
+#### Next · Help people uncover the story.
+
+Next, turn on the inquiry engine so searches run in real time. Then test it with real people. Or keep iterating until every tester loves it and asks for more.
+
+**How I'd measure it.** The test that counts: does it surface a consequential connection you would have missed, with evidence you can inspect? Then run two bets side by side, a reliably fresh briefing or a surprising perspective, to see which people value. Measure feeling caught up and return visits, never minutes in the app.
+
+### Result
+
+- 10 h From brief to working proof of concept ()
+- 180 Notes in the engine's memory after four inquiries ()
+- Soon User interviews ()
+
+Credits: Solo: working research engine, product, interface, motion.
+
+Limits: Not shipped. No user interviews yet. The returning-user experience is unpolished. X & YouTube block automated access.
+
+One honest line: I hit the 10-hour limit at Home. I traded the return visit for a first impression, on purpose.
+
+---
+
+## The agent lives in your inbox
+
+https://www.tommydelarosbil.com/work/cedar/
+
+Cedar · 2024–25 · Staff Product Designer · 6 weeks · Shipped · Measured
+
+People job hunting while working full time don't have room for another app. With the CEO and CTO, I put the AI agent in their inbox, gave it a voice with strict rules, and kept a small web app for what email can't do. 81% daily open rate, 5% paid conversion.
+
+### Short version
+
+#### Inbox · No app to remember.
+
+Busy people job hunting while working full time already open their email every day. So the agent lives there, in Gmail and other clients, with no complex app or login to build. A small web app handles what email can't: browsing recommendations, preferences, the profile.
+
+#### Voice · A personality, not a template.
+
+For the agent to feel like a real person, it needed rules, and it only emails when there's clear value. A few of them:
+
+- One clear CTA, like "Explore Today's Job Matches".
+- About three sentences, friendly and personal: "Hey, just wanted to give you a heads up—I found a few roles that might be right up your alley."
+- Credible when it matters: "I looked through 238,875 relevant jobs in my database."
+- When there are no jobs, it reassures without a CTA.
+
+#### Feedback · Real feedback steered the MVP.
+
+We clustered and counted what people told us. Daily emails felt too frequent (3×). Matches ignored hard filters like country and must-have skills (4×). Swiping felt "perhaps too fast to make a good judgement" (2×). The rapid wireframe and flow iterations helped the CEO and CTO firm up the vision quickly.
+
+#### Craft · The application package.
+
+Company background attached, all possible application answers drafted by the agent, and average time to submit: 4 mins. The agent's voice and the product's value on one phone screen.
+
+#### Foundation · Also mine.
+
+The logo, mascot, palette and type; a component library built with Tailwind; mobile-first emails and a responsive web app. 70+ wireframes and mockups, 30+ flows in 80 hours.
+
+### Result
+
+- 5% Paid conversion (Measured)
+- 81% Daily email open rate (Measured)
+- 35% Recommendations accepted (Measured)
+
+Credits: Product, brand, UI, agent voice, design system. With the CEO, CTO, and the engineers.
+
+Limits: The initial design decisions are no longer part of Cedar’s significantly evolved experience, but they helped answer key questions early on.
+
+One honest line: Working with conversational AI at the time meant constantly refining and adjusting the instructions.
+
+---
+
+## From 20% task success to 80%
+
+https://www.tommydelarosbil.com/work/mastering-revisions/
+
+LANDR · 2021 · Senior Product Designer · ~3 weeks · Shipped · Measured
+
+Pros churned because LANDR's mastering gave them almost no control. After seven interviews with churned Pros, I designed a separate revision tool that asks plain questions, instead of complicating Mastering with technical jargon. One failed test and one extra week later: 80% task success and $147K in incremental revenue.
+
+### Short version
+
+#### Problem · Pros were leaving.
+
+For producers who know what they want, LANDR's one-click mastering felt too basic. After a few disappointing masters, many considered other tools. Churn and weak conversion to paid plans followed.
+
+#### Research · Seven people who left, one answer.
+
+A churn survey, then seven interviews with Pros who had churned. All seven wanted a full plugin's power with much easier usability. Five had loudness problems, five had clipping, four wanted finer EQ.
+
+#### The no · Protect the flagship.
+
+Stakeholders wanted an extended version of Mastering. The PM and I said no: new users and Aspiring Musicians loved its simplicity. Revisions became a separate Pro feature, linked to the original master.
+
+#### The test · The first test failed at 20%.
+
+Technical copy, confusing concepts, no audio while revising. Leadership wanted to launch anyway. I asked for one more week. Version two asked plain questions with opinionated answers and let people listen while revising: 80% task success on the same panel.
+
+#### Paywall · Ask after they decide.
+
+The subscription message leaned toward a dark pattern. I moved the upgrade prompt to after "Revise master", once people had invested, and got an A/B test planned before I left.
+
+### Long version
+
+#### Context · The lowest point on the journey.
+
+On the Mastering Pro journey, the lowest point came after the master: a Pro, consistently disappointed by the result, wanting more control. The original product felt too basic for people who know what they want. After repeated disappointments, many considered switching to other mastering tools.
+
+#### Stakes · Churn with a price tag.
+
+Pros generated millions a year, and this pain point drove churn worth hundreds of thousands in lost revenue. With thousands of potential Pros converting to paid plans each month, weak conversion missed hundreds of thousands more. The goals: more plan upgrades, less Pro churn, better engagement and satisfaction.
+
+#### Research · Listening to the people who left.
+
+A churn survey to Pro subscribers confirmed most of them were Pros, and that they wanted more from a mastering tool. Then I interviewed seven who had churned, combining the Five Whys for root causes, motivational interviewing for goals, and Jobs-to-be-Done for the outcomes they needed.
+
+#### Strategy · A bar to clear.
+
+Granular control over things like EQ and sound types, in an interface that stays intuitive, fast, accessible and easy to navigate. Prototype and test until success passes 75%. My hypothesis: Pros know mastering well enough to adjust a track that's already mastered.
+
+#### The no · Protecting the flagship.
+
+Key stakeholders suggested an extended version of the Mastering product. The PM and I rejected it. The original was so successful it had made LANDR a flagship, and we didn't want to disrupt it for new users or Aspiring Musicians, who valued its simplicity. We built a separate Pro feature, still linked to the original.
+
+#### Building · With a mastering engineer in the room.
+
+A professional mastering tool is technically complex. Luckily, the PO was a seasoned mastering engineer. Through several ideation and wireframing sessions, we balanced technical needs with usability, and built the first prototype.
+
+#### The test · It failed.
+
+Five tests on the same panel of users, to avoid delays. Task success: 20%. People were confused by some concepts and struggled to choose settings, which went against my hypothesis. The copy was too vague. And they wanted real-time audio while revising, which the servers couldn't do.
+
+#### One more week · Arguing against launch.
+
+Leadership wanted to ship after the first round, despite the results. I advised against it: frustration for Pros, damage to LANDR's reputation, and little chance of meeting our goals. Improvements were cheap. I convinced them to extend testing by a week, and they agreed.
+
+#### Version two · Plain questions, opinionated answers.
+
+An introduction to reduce confusion. The ability to listen to the master while revising, so people judge by ear instead of by memory. And questions with clear answers: "How is the loudness? Too quiet / Good / Too loud." "The lows are: Good / Boomy / Thin." Familiar language, plus tooltips for the theory Pros sometimes lacked. People chose with more confidence and less hesitation. 80% task success.
+
+#### Paywall · Where the paywall goes.
+
+Non-subscribers saw a message saying a plan was required. I asked the design team for a less intrusive pattern, since it leaned toward forcing people to subscribe before trying the feature; the team decided it wasn't a priority. So I worked with product to show the upgrade prompt only after people click "Revise master", once they've invested. Before I left, it was on the roadmap, with an A/B test planned against a hidden paywall. Close to finishing, people want to finish.
+
+#### Outcome · Did it work?
+
+80% task success, $147K in incremental revenue, 9% more plan upgrades, 5% less churn, and 11% of Pro mastered tracks revised at least once. Feedback after launch confirmed Pros were eager for a feature like this, and that it played a key role in their decision to stay with LANDR or subscribe.
+
+#### Looking back · Watch what people do.
+
+Interviews told me Pros knew mastering. The test showed what they actually did. Observation after interviews is how you validate an insight: what people say isn't always how they behave. One note: the live panel was changed after I left, without my knowledge. What's shown here is my version.
+
+### Result
+
+- 80% Task success (from 20%) (Measured)
+- $147K Incremental revenue (Measured)
+- 9% More plan upgrades (Measured)
+- 5% Less churn (Measured)
+
+Credits: Research, interaction, UI, copy. With the PM, a PO who was a mastering engineer, engineering and the design team.
+
+Limits: Real-time revision audio was impossible on the servers. The live UI was changed after I left; the v2 shown here is my design.
+
+One honest line: Observation beat interviews: what people said wasn't always what they did.
+
+---
+
+## The wait became the product
+
+https://www.tommydelarosbil.com/work/waitzine/
+
+LANDR · 2020 · Senior Product Designer · ~2 weeks · Shipped · Measured
+
+51% of new users left before hearing their first master. Making mastering faster would take months for under 5%, so I redesigned the wait instead: a progress bar built for perception, and a magazine to learn in the meantime. +79% songs mastered and $493K in incremental revenue.
+
+### Short version
+
+#### Problem · 51% left before hearing their preview.
+
+Half of new users abandoned mastering during the Master Preview, the moment that turns a visitor into a paid customer: 71% of people who hear the preview go on to master a track.
+
+#### Why · The wait felt broken.
+
+The preview took about two minutes. Hotjar showed people leaving to do something else. In seven tests with new users, four found the wait frustrating and three thought it had frozen.
+
+#### Constraint · Speed wasn't an option.
+
+Engineering estimated months of work to make the preview less than 5% faster. Not worth it. So we redesigned the wait instead.
+
+#### Progress · A bar built for perception.
+
+A five-stage breakdown replaced the spinner. Developers thought a simulated bar was impossible after earlier failed attempts. I found a way, and argued that perception mattered more than real-time accuracy. I estimated the average duration, sped up the bar for faster processes, and displayed a *finalizing details* message when they took longer.
+
+#### Waitzine · A magazine for the wait.
+
+Fresh production tips and other LANDR products, in a carousel that opens on its own. Leadership was reluctant until I drew a parallel with a dentist’s waiting room and demonstrated the potential revenue increase. The chance to cross-sell at a peak moment sealed it.
+
+#### After launch · An off switch.
+
+Many engaged users master several tracks in a row, and they hated the auto-trigger. We added a way to turn it off. The prototype testing we skipped under leadership pressure would have caught it earlier, but we still caught it.
+
+### Long version
+
+#### Context · Mastering paid the bills.
+
+LANDR is a one-stop platform for music production, and Mastering was its flagship. I worked across the whole Mastering journey, from the first upload to becoming a subscriber, and mapped it with the team: Sound DNA, the Waitzine, Revisions, pricing-page optimization, Synopsis. The Waitzine came first, at the point where the journey leaked most.
+
+#### People · Two people, one product.
+
+**The Pro:** a seasoned producer or mix engineer who works on music regularly and finds scattered production tools frustrating. Knows mastering well, and overestimates their expertise.
+
+**The Aspiring Musician:** just starting out, learning as they go, looking for a platform that simplifies mastering and helps them progress.
+
+Every decision had to work for both.
+
+#### The leak · A 51% hole in the happy path.
+
+A new user picks a track, the Master Preview starts, the preview is ready, they create the master, they pay. 51% of users abandoned before the preview. With Mastering generating millions a year, that drop had cost millions in missed opportunities.
+
+#### Why · The data, the engineers, and Hotjar.
+
+I went to the data, engineering and product teams, and asked for Hotjar. The engineer said the preview took about two minutes on average, and the data analyst later confirmed it. Hotjar showed many users leaving the platform before the preview, seemingly to do something else. The stakes were clear: 71% of people who hear the preview in the consideration phase go on to master at least one track.
+
+#### Tests · Seven people, watched while they waited.
+
+I ran seven tests with new users from both personas, combining a cognitive walkthrough with performance testing. I watched task success, confidence, distractions during the wait, and how long the wait felt. Four of seven found it frustrating. Three thought the process had frozen. My hypothesis: some forgot to come back after something else pulled them away.
+
+#### The fix we didn't build · Months for under 5%.
+
+The obvious answer was a faster preview. I explored it with engineering; they estimated months of work to cut the time by less than 5%. We dropped it. The strategy became two things: progress feedback people could trust, and something worth looking at while they wait.
+
+#### Selling it · The dentist's waiting room.
+
+Leadership was reluctant to put content in front of people mid-task. Data and research got me a hearing. The CEO warmed to the idea when I compared it to a dentist's waiting room, where people pass the time with a magazine or their phone. What sealed it was the chance to cross-sell during a peak usage moment.
+
+#### Progress · Progress you can believe.
+
+The spinner became a five-stage breakdown of the preview. It no longer looks frozen, and the bar reflects how long the process really takes. Developers resisted: earlier attempts had failed, and they thought it was impossible. I found a way to simulate the progress with high fidelity, and argued that user perception mattered more than real-time accuracy. They followed. People feel in control when they see progress, even simulated progress, and a smooth bar is easier to read than a spinning wheel.
+
+#### Alternatives · Three ideas we didn't ship as-is.
+
+Updating the progress panel alone fixed the feedback but didn't hold attention, so its improvements went into the final design. Full-screen feedback grabbed attention, but it would have bored people during the wait. And with the brand team and design-system leads, we chose a white top section over dark mode, so the progress would stand out.
+
+#### Content · Content is a product too.
+
+With marketing, I balanced usability and content. At first we removed the buttons that led people away, to avoid more drop-off. Stale content would also weaken the Waitzine, so I ran workshops to push for monthly updates. It wasn't a marketing priority until they saw the impact a month later. Since then, CTAs have come back on every slide. I believe they hurt Mastering revenue, and I'd want Marketing, Finance and Product to compare overall revenue with Mastering revenue.
+
+#### Outcome · Did it work?
+
+Songs mastered rose 79%, incremental revenue reached $493K, and cross-product adoption rose 6%. Showing other products mid-task was a risk we took with marketing and leadership: we wanted to avoid any drop-off, but supporting other products during LANDR's scaling period mattered. The result was positive.
+
+#### Looking back · Trust is a design tool.
+
+We skipped prototype testing under leadership pressure. After launch, Pros cared less about the tips. Aspiring Musicians were the biggest winners, with many new users becoming engaged. Many users hated the auto-trigger because they master several tracks in a row, so we added a way to turn it off. What I took from it: building trust takes diplomacy, strategy and consistent execution, and in a leadership-driven room, data is what moves decisions.
+
+### Result
+
+- +79% Songs mastered (Measured)
+- $493K Incremental revenue (Measured)
+- +6% Cross-product adoption (Measured)
+
+Credits: Research, concept, interaction, UI, specs. With analytics, engineering, product, marketing, brand and leadership.
+
+Limits: Prototype testing was skipped under leadership pressure. Marketing owned the content, later added counterintuitive CTAs to every slide. Noticed the change after I left.
+
+One honest line: I'd have fought harder to test before launch. The off switch fixed something testing would have caught.
+
+---
+
+## A new checkout in four weeks, without testing
+
+https://www.tommydelarosbil.com/work/payment-gateway/
+
+Groupe Dynamite · 2024 · Senior Product Designer · 4 weeks · Shipped · Qualitative
+
+A new payment API in four weeks, no time for user testing, and most leaders expected failure. I refined the design daily with the PM and developers, iterated every screen inside its user flow, and split the release in two to protect conversion. Handed off on time, across two brands.
+
+### Short version
+
+#### Context · Four weeks, a new payment API, no time to test.
+
+The CTO gave my product team an urgent project: refactor the payment gateway of both native apps, Dynamite and Garage, around a new third-party API. Four weeks to prepare development, no time for user testing, and most leaders expected it to fail.
+
+#### Decide daily · Without testing, every detail was argued.
+
+I asked for daily refinements with the PM and developers, trading usability against back-end limits screen by screen. Baymard research, usability heuristics and the web team's experience stood in for the tests we couldn't run.
+
+#### Two days in · Past work wasn't going to carry us.
+
+I started from mid-fidelity wireframes and stakeholder feedback gathered a year earlier. Two days in, it was clear we wouldn't make it. I went straight to high fidelity and put the screens inside the user flows so everyone could follow to protect the date.
+
+#### Release · Two releases instead of one.
+
+Release 1 integrated the API without hurting usability or conversion. The trade-off was an inconsistent visual language across the flow. Release 2 filled the gaps. Side-by-side rows of the current app, Release 1 and Release 2 let non-product stakeholders see progress instead of remembering it.
+
+#### Specs · One gateway, two brands.
+
+Proactive work helped facilitate visual design. A master button, a master product card, one type system per brand, every state specced for developers. They became the first official tokens and components of the apps' design library.
+
+### Long version
+
+#### Before the gateway · Two apps, no product team.
+
+I was hired to lead the complete redesign of Groupe Dynamite's two native apps. Groupe Dynamite is a Canadian fashion retailer with over 300 stores and two brands, Garage and Dynamite. I did it alone, and the redesign quickly showed problems bigger than the screens: no clear leader at first, siloed teams, no product development process, and a split between short-term conversion and long-term loyalty. App design was treated as surface work.
+
+#### Groundwork · A year of work nobody asked for.
+
+With no product team, I did the groundwork myself. I benchmarked About You, Zara, Adidas, Mango and Ssense, audited the apps against Baymard research and usability heuristics, and ran user interviews. I drew more than 300 exploratory wireframes and wrote 40+ design tactics grounded in behavioural science. I presented the work more than 40 times and tracked every piece of feedback in a table I revisited at each iteration. The new Home and universal UI landed with the CEO, who is notoriously hard to impress.
+
+#### Trust · Slowing down first.
+
+It's tempting to rush design work. I chose alignment meetings, transparent communication and strategy first, and trust became the key result. Stakeholders started to see how design decisions tied to business goals. That trust is what the next project ran on.
+
+#### The ask · "Most leaders expected failure."
+
+Then the CTO assigned an urgent project to my product team: a complete refactor of the payment gateway, because of a new third-party API integration. We had four weeks to prepare development. A back-end-heavy, high-risk change, with no time for user testing. Most leaders expected failure. I embraced the challenge.
+
+#### Goals · Five goals, one deadline.
+
+- Seamlessly adapt the experience to the new API
+- Maintain or improve the conversion rate
+- Align the experience with the latest brand guidelines
+- Deliver the essentials on time, with fast-follow releases for refinements
+- Integrate the new loyalty program
+
+This project wasn't driven by a product or user problem. Through ongoing collaboration, we found the issues the API integration caused, and I kept usability a priority until the PM, the developers, key stakeholders and I reached consensus.
+
+#### Method · Daily refinements instead of tests.
+
+I advised the team to hold daily refinements to align on the trade-offs between usability and back-end constraints. Without user testing, every detail had to be discussed to avoid breaking the experience and causing a conversion disaster. The strategy was simple: think like the consumer, apply usability heuristics, lean on past research and the Baymard Institute, fix known UX issues, and use the web team's expertise.
+
+#### Starting point · Mid-fidelity, on purpose.
+
+A year earlier, low-fidelity wireframes had confused stakeholders, so I started at mid fidelity. I drew two checkout shells: one with a sticky total that shows the points you'll earn, one that makes the order easy to double-check. Address and shipping got clear states, with a green check when information is saved. The Order Placed screen got three options. That screen is the peak of the experience, and the right moment to celebrate rewards or ask for something back.
+
+#### Scope · What we said no to.
+
+I brought ideas worth stealing: Save for later from Lululemon and Amazon, swipe to remove, and my own sketch of a "$15 away from free shipping" bar. After talking it through with the PM and developers, we agreed it would exceed the project's scope.
+
+#### Two days in · Even mid-fidelity was too slow.
+
+Leaning on past work was a good strategy, but two days in, it was clear we wouldn't make it. High-fidelity wireframes became essential. Reviews went faster, confusion dropped, and developers juggling constant context switches could work straight from them.
+
+#### Flows · Screens inside the flows.
+
+One technique I love is putting the wireframes or mockups inside the user flows. Collaborators can follow along, take ownership and bring their best ideas. Stakeholders got a quick recap of what had changed since their last look, so alignment stayed fast and linear and we could move on to the next task.
+
+#### Constraint · The bottom sheet we couldn't change.
+
+The API's payment bottom sheet came almost as-is out of the box, and it sat at the centre of the refactor. We tried redesigning it, but we had to keep changes minimal to meet the deadline. Developer spikes kept reopening the payment step, which took several rounds of design over two weeks.
+
+#### Coverage · Every use case.
+
+We covered returning users with past orders, error handling, and every payment path: Visa, PayPal, Apple Pay, Klarna, gift cards, loyalty points and their combinations. We also covered address validation, billing addresses and the shopping bag.
+
+#### Hand-off · Specs became the system.
+
+Every screen was aligned with the brand teams and specced to the pixel, with auto-layout throughout: spacing, both brands' type systems, a master button, a master product card with eleven parts. The Business Analyst used my documentation to fill Jira. Those tokens and components became the foundation of the design library for every app refactor that followed.
+
+#### Release · Current app, Release 1, Release 2.
+
+To minimise risk, we committed to two releases. The first integrated the API without compromising usability or conversion; the second finished the experience. Non-product stakeholders could compare rows of the current app and both releases side by side, so tracking progress wasn't a memory exercise. Every use-case decision went back to the VP of Product and the apps' business owners.
+
+#### Looking back · Alignment did what testing couldn't.
+
+Over 100 wireframes, 80+ mockups and 25+ user flows were refined, reviewed and handed off in four weeks. The year before made that pace possible: the alignment, the feedback tables, the trust. Leadership isn't about authority. It's influence, earned through consistent, transparent communication. What I still don't know is whether conversion moved. We set out not to break it, and nothing I have says we did.
+
+### Result
+
+- 4 wks To handoff (Fact)
+- 100+ Wireframes, then 80+ mockups and 25+ flows (Fact)
+- On time Delivery (Qualitative)
+
+Credits: Flows, UI, specs, design library. With the CTO, PM, Business Analyst and developers; decisions reviewed with the VP of Product and business owners.
+
+Limits: No user testing. No conversion data recorded after launch. I left before seeing the impact.
+
+One honest line: The goal was to maintain or improve conversion, and I have no data either way, so the claim is that we didn't break it.
+
+---
+
+## The table at 45 degrees
+
+https://www.tommydelarosbil.com/work/beer-table/
+
+William J. Walter · 2017 · Independent consultant · 3 hours · Field Observation · Psychology
+
+A Quebec City sausage shop wanted to sell more beer. Sitting by the door for two hours, I saw people walk straight to the counter and notice the beer only after paying. I turned one table 45 degrees and moved beer around the space. Beer sales rose 15%.
+
+### Short version
+
+#### Observe · Two hours by the door.
+
+The shop's beer sales were struggling, and the beer fridge was stuck in the worst spot. Before proposing anything, I sat by the entrance for two hours and watched the path people took.
+
+#### Friction · Beer, seen too late.
+
+People walked a straight corridor to the counter, picked sausages they knew nothing about, and only noticed the beer on the way out. Nobody goes back for beer after paying.
+
+#### Change · Turn the table 45 degrees.
+
+The fridge couldn't move, so the path had to. A table turned 45 degrees, beer at the entrance and beside matching sausages, and a clerk suggesting pairings.
+
+#### Effect · Beer as the guide.
+
+People paused, scanned the shop and chose a beer first. Knowing which beer they like made the unfamiliar sausage an easier choice. Left the owner a one-page strategy to organize around.
+
+### Long version
+
+#### Belief · UX is mostly psychology.
+
+To influence what people do, look at what they do in context, and find out why, first. It's surprising how fast assumptions that seemed logical fall flat after a simple test. William J. Walter, a sausage shop in Quebec City, was struggling with beer sales. The beer fridge was in the worst possible spot, and it had to stay there.
+
+#### Observe · Two hours by the door.
+
+I sat on the right side of the entrance for two hours. I wanted to see the path customers took first. It was simple: they came in, bought sausages, paid and left. Almost everyone did the same thing.
+
+#### Behaviour · Regulars who acted like strangers.
+
+Most people acted like first-time customers, even the ones who weren't. As they came in, they seemed lost. They headed straight to the counter, but it felt forced, like they were being pushed there against their will.
+
+#### Friction · Three moments that cost a sale.
+
+First, the walk to the counter felt forced. Second, at the counter, people struggled to choose: they knew nothing about sausages. Third, on the way out, they noticed the beer fridge for the first time, or remembered it too late. They'd missed it, and they weren't coming back in after paying. They'd rather stop at the convenience store, even though it's more trouble.
+
+#### Asset · What the owners actually knew.
+
+The owners' most valuable knowledge was which beer goes with which sausage. It was the experience they wanted to offer, not just another shop selling sausages. So far, all they did with that knowledge was keep a beer fridge. So I asked: why not bring the beer and the sausages together, and let beer lead the way?
+
+#### Change · One table, a few bottles, one sentence.
+
+I suggested turning the table 45 degrees, putting beer bottles and packs at the entrance, and placing bottles beside the sausages in the counter. I asked the clerk to suggest pairings.
+
+#### Effect · From friction to "aha".
+
+The change showed right at the door. The angled table broke the corridor and worked like a stop sign: people paused, scanned the whole shop, and felt invited instead of pushed. At the counter, beer beside the sausages gave them a clear choice: they didn't know sausages, but they knew what beer they like. And on the way to the cashier, the beer was still in sight. Some reached for the fridge before paying, and left with both.
+
+#### Value · $150 for a 15% lift.
+
+The owner later told me beer sales grew by up to 15% after these small changes. I charged $150 for the analysis and the recommendations. Whether it's an app, a website or a store, people are looking for something. If the path to it is confusing or frustrating, they don't buy and they don't come back.
+
+#### Looking back · Beer as the guide.
+
+In the end, customers saw the beer as their guide to the sausages, not just another thing to buy. We didn't add anything new. We changed where things sat and how the path felt, because we knew what people did and, mostly, why.
+
+### Result
+
+- +15% Beer sales ()
+- $150 Fee for the analysis ()
+
+Credits: Observation, analysis, layout recommendation. The clerk ran the pairing suggestions.
+
+Limits: A 15% increase in beer sales was reported in the first month after the changes, with no subsequent updates.
+
+One honest line: The fridge couldn't move, so the path had to.

@@ -105,7 +105,7 @@ async function buildPhone(api, { ui = '', back = null, place = () => ({ h: 0.86 
   const blackGlass = new THREE.MeshPhysicalMaterial({ color: 0x040404, roughness: 0.08, clearcoat: 1, clearcoatRoughness: 0.04, envMapIntensity: 0.85 });
 
   const phone = new THREE.Group(); phone.rotation.order = 'YXZ';
-  phone.add(new THREE.Mesh(slab(BODY_W, BODY_H, RADIUS, DEPTH, BEV, 40, 10), [blackGlass, frameMat]));
+  const body = new THREE.Mesh(slab(BODY_W, BODY_H, RADIUS, DEPTH, BEV, 40, 10), [blackGlass, frameMat]); phone.add(body);
   const glass = new THREE.Mesh(flatPanel(SCREEN_W, SCREEN_H, SCREEN_R, 48), new THREE.MeshBasicMaterial({ color: 0x000000 }));
   glass.position.z = DEPTH / 2 + 0.0012; phone.add(glass);
   const btn = { s: slab(0.07, 0.13, 0.035, 0.024, 0.008, 16, 4), m: slab(0.07, 0.27, 0.035, 0.024, 0.008, 16, 4), l: slab(0.07, 0.42, 0.035, 0.024, 0.008, 16, 4) };
@@ -132,6 +132,12 @@ async function buildPhone(api, { ui = '', back = null, place = () => ({ h: 0.86 
   phone.add(backG);
   const anchor = new THREE.Object3D(); anchor.position.z = DEPTH / 2 + 0.0024; anchor.scale.set(PX, PX, PX); phone.add(anchor);
   const rig = new THREE.Group(); rig.add(phone); scene.add(rig);
+  // the phone's outline on screen (normalised device coordinates): its body projected through the camera
+  const bodyPts = [], bp = body.geometry.attributes.position, v3 = new THREE.Vector3();
+  for (let i = 0; i < bp.count; i++) bodyPts.push(new THREE.Vector3(bp.getX(i), bp.getY(i), bp.getZ(i)));
+  const outline = () => { rig.updateMatrixWorld(true); let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    for (const q of bodyPts) { v3.copy(q).applyMatrix4(phone.matrixWorld).project(camera); x0 = Math.min(x0, v3.x); x1 = Math.max(x1, v3.x); y0 = Math.min(y0, v3.y); y1 = Math.max(y1, v3.y); }
+    return { x0, x1, y0, y1 }; };
   // is a point of the page on the phone? (its body, buttons and glass, as drawn this frame)
   const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
   api.hitPhone = (cx, cy) => { const r = canvas.getBoundingClientRect(); if (!r.width) return false;
@@ -143,7 +149,18 @@ async function buildPhone(api, { ui = '', back = null, place = () => ({ h: 0.86 
   if (renderer.compileAsync) await renderer.compileAsync(scene, camera); else renderer.compile(scene, camera);
 
   /* layout: the case says how big and where; the camera keeps the phone that size */
-  const L = { px: 400, dist: 12, cx: 0.5, cy: 0.5 };
+  const L = { px: 400, dist: 12, cx: 0.5, cy: 0.5, ox: 0, oy: 0 };
+  /* a turned phone seen in perspective is not centred on its own middle: at rest (the case's pose, no float or lean)
+     the rig moves until the outline's centre is where the case asked for it, (cx, cy) of the block (2026-10-20) */
+  const rest = () => { phone.rotation.set(pose.pitch, pose.yaw, pose.roll); rig.position.set(0, 0, 0); };
+  const centre = () => {
+    const visH = 2 * L.dist * TAN, visW = visH * (S.W / S.H);
+    rest(); L.ox = (L.cx - 0.5) * visW; L.oy = (0.5 - L.cy) * visH;
+    for (let i = 0; i < 3; i++) {
+      rig.position.set(L.ox, L.oy, 0); const o = outline();
+      L.ox += ((2 * L.cx - 1) - (o.x0 + o.x1) / 2) / 2 * visW; L.oy += ((1 - 2 * L.cy) - (o.y0 + o.y1) / 2) / 2 * visH;
+    }
+  };
   const layout = () => {
     const p = place(S) || {}, h = p.h ?? 0.86, maxW = p.maxW ?? 0.9;
     L.px = Math.min(S.H * h, (S.W * maxW) / BODY_RATIO); L.cx = p.cx ?? 0.5; L.cy = p.cy ?? 0.5;
@@ -151,6 +168,7 @@ async function buildPhone(api, { ui = '', back = null, place = () => ({ h: 0.86 
     camera.aspect = S.W / S.H; camera.position.set(0, 0, L.dist); camera.lookAt(0, 0, 0); camera.updateProjectionMatrix();
     renderer.setSize(S.W, S.H, false);
     cam.style.width = S.W + 'px'; cam.style.height = S.H + 'px';
+    camera.updateMatrixWorld(); centre();
   };
   api.resize(layout);
 
@@ -174,7 +192,7 @@ async function buildPhone(api, { ui = '', back = null, place = () => ({ h: 0.86 
     const p = st.intro === null ? 0 : reduce ? 1 : clamp((t - st.intro) / 2.2, 0, 1);
     const turn = Math.PI * Math.pow(1 - p, 4), rise = -BODY_H * 1.2 * Math.pow(1 - p, 3);
     const visH = 2 * L.dist * TAN, visW = visH * (S.W / S.H), fl = reduce ? 0 : Math.sin(t * 0.9) * 0.035;
-    rig.position.set((L.cx - 0.5) * visW, (0.5 - L.cy) * visH + fl + rise, 0);
+    rig.position.set(L.ox, L.oy + fl + rise, 0);
     const yaw = st.yaw + turn;
     phone.rotation.set(st.pitch, yaw, pose.roll + (reduce ? 0 : Math.sin(t * 0.55) * 0.018));
     rimL.position.set(4 + S.shx * 2.2, 1.5 - S.shy * 1.2, -4);

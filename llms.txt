@@ -1,0 +1,40 @@
+# Tommy Delarosbil
+
+> Product Designer · Toronto, Ontario, Canada. Product designer, 15+ years. AI agents people use, design systems AI can follow, prototypes in code. Case studies from Cedar, LANDR, Groupe Dynamite.
+
+I design where intelligence shows up. Product Designer & Leader. Craft, System & AI-Native.
+
+Product designer for 15+ years across music, commerce, hospitality, insurance and education. Lately: AI-native products, design systems that AI can follow, and prototypes built in code. Based in the Toronto area. Husband and dad.
+
+- Website: https://www.tommydelarosbil.com/
+- LinkedIn: https://www.linkedin.com/in/tommydelarosbil/
+- Email: delarosbil.t@gmail.com
+- Expertise: AI-native product design, Agentic AI, Design systems, UX research, Prototyping in code, Product strategy, Design leadership
+
+## Case studies
+
+- [Intelligence that searches for you](https://www.tommydelarosbil.com/work/nexgen/): NexGen News · 2026 · Solo · 10 hours. News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
+- Designing the system before the product (Shipped, white-label, password on request): AI sped up the team's output, and its drift. A token and rule system made consistency keep up with a two-week cadence.
+- [The agent lives in your inbox](https://www.tommydelarosbil.com/work/cedar/): Cedar · 2024–25 · Staff Product Designer · 6 weeks. People job hunting while working full time don't have room for another app. With the CEO and CTO, I put the AI agent in their inbox, gave it a voice with strict rules, and kept a small web app for what email can't do. 81% daily open rate, 5% paid conversion.
+- We stopped making chat the destination (Shipped, white-label, password on request): Live chat testing showed operators liked the intelligence, not the chat. The team deprecated chat and brought intelligence into the work instead.
+- [From 20% task success to 80%](https://www.tommydelarosbil.com/work/mastering-revisions/): LANDR · 2021 · Senior Product Designer · ~3 weeks. Pros churned because LANDR's mastering gave them almost no control. After seven interviews with churned Pros, I designed a separate revision tool that asks plain questions, instead of complicating Mastering with technical jargon. One failed test and one extra week later: 80% task success and $147K in incremental revenue.
+- [The wait became the product](https://www.tommydelarosbil.com/work/waitzine/): LANDR · 2020 · Senior Product Designer · ~2 weeks. 51% of new users left before hearing their first master. Making mastering faster would take months for under 5%, so I redesigned the wait instead: a progress bar built for perception, and a magazine to learn in the meantime. +79% songs mastered and $493K in incremental revenue.
+- [A new checkout in four weeks, without testing](https://www.tommydelarosbil.com/work/payment-gateway/): Groupe Dynamite · 2024 · Senior Product Designer · 4 weeks. A new payment API in four weeks, no time for user testing, and most leaders expected failure. I refined the design daily with the PM and developers, iterated every screen inside its user flow, and split the release in two to protect conversion. Handed off on time, across two brands.
+- [The table at 45 degrees](https://www.tommydelarosbil.com/work/beer-table/): William J. Walter · 2017 · Independent consultant · 3 hours. A Quebec City sausage shop wanted to sell more beer. Sitting by the door for two hours, I saw people walk straight to the counter and notice the beer only after paying. I turned one table 45 degrees and moved beer around the space. Beer sales rose 15%.
+
+## Experience
+
+- 2025–26 · Compass Digital, Senior Product Designer · AI Insights > CTO Office: Best contribution and impact hidden for confidentiality. Found ~3M operator hours a year to automate. Built a GPT research workflow: evidence that stays current.
+- 2024–25 · Cedar, Staff Product Designer · Agentic AI: Put the AI agent in the inbox: 81% daily opens, 5% paid.
+- 2022–24 · Groupe Dynamite, Senior Product Designer · Commerce apps: New checkout in four weeks, no testing. On time. Two apps, no direction. Left them one.
+- 2021–22 · Korbit, Lead Product Designer · AI EdTech: AI feedback in a Python IDE, before ChatGPT.
+- 2019–21 · LANDR, Senior Product Designer · Music tech: Turned a two-minute wait into +79% songs mastered, $493K a year. First test failed at 20%. One more week: 80%. $2M+ a year across experiments.
+- 2019–21 · NumériQ / Québecor, Lead UX & UI · Media: Led 5 designers. Design moved into the sprints.
+- 2018–19 · Intact, Lead UX Strategist · Insurance: Led 6 designers. Design thinking into problem framing.
+- 2017–18 · Aeroplan, Senior Product Designer · Loyalty: One initiative: $310K+ a year.
+- 2017 · A sausage shop, Side project: Turned one table 45°: beer sales +15%.
+- 2015–17 · Scolab, Senior Product Designer · EdTech: A math textbook, rebuilt for iPad.
+
+## Optional
+
+- [Every public case study in full](https://www.tommydelarosbil.com/llms-full.txt)
