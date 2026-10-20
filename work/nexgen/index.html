@@ -452,7 +452,7 @@ body.m .fw[data-style]{border-color:#111}
 .fw[data-style=hanson] .foot .copy{border:1px solid var(--deep-line);color:inherit;border-radius:0;padding:6px 14px;font:inherit;background:none}
 .fw[data-style=hanson] .foot a.mute{color:inherit}
 .fw[data-style=hanson] .foot .cr{grid-column:1/-1;margin:clamp(48px,7cqi,104px) 0 0;padding-top:clamp(24px,2.8cqi,40px);border-top:1px solid var(--deep-line);font:inherit;color:var(--deep-mute)}
-.fw[data-style=hanson] .chead{justify-items:center;text-align:center;padding-block:clamp(40px,7cqi,104px) clamp(36px,5cqi,72px);gap:clamp(12px,1.4cqi,20px)}
+.fw[data-style=hanson] .chead{justify-items:center;text-align:center;padding-block:var(--case-top) clamp(36px,5cqi,72px);gap:clamp(12px,1.4cqi,20px)}
 .fw[data-style=hanson] .chead h1{font:400 clamp(28px,3.05cqi,44px)/1.25 var(--serif);letter-spacing:0;max-width:24ch}
 .fw[data-style=hanson] .disclose{border:0;padding:0;font:400 14px/1.5 var(--sans);max-width:60ch}
 .fw[data-style=hanson] .hero{aspect-ratio:4/5;margin-bottom:clamp(64px,10cqi,144px)}
@@ -1314,8 +1314,10 @@ body.m .fw{width:390px;max-height:844px;border:6px solid #111;border-radius:30px
 /* images: one radius, one hairline */
 .fw .vis{border-radius:var(--radius,0)!important;box-shadow:0 0 0 1px var(--hairline,rgba(0,0,0,.1))!important}
 /* case pages */
-/* the line under the site bar: Short / Long centred, in the site bar's type, like its links; the line stays when a case has no Long */
-.fw[data-style=hanson] .cbar{display:flex;align-items:baseline;justify-content:center;min-height:calc(var(--nav-fs) * var(--nav-lh));margin-top:var(--hdr-pb);
+/* the line under the site bar: Short / Long centred, in the site bar's type, like its links; the line stays when a case has no Long.
+   It sits halfway between the site bar and the title: one space (--case-top) above it and below it (2026-10-20) */
+.fw[data-style=hanson] .site{--case-top:clamp(24.8px,4.333cqi,62.4px)}
+.fw[data-style=hanson] .cbar{display:flex;align-items:baseline;justify-content:center;min-height:calc(var(--nav-fs) * var(--nav-lh));margin-top:var(--case-top);
   font:var(--nav-st) var(--nav-fw) var(--nav-fs)/var(--nav-lh) var(--nav-ff);letter-spacing:var(--nav-ls)}
 .fw[data-style=hanson] .modes button:hover{color:var(--ink)}
 .fw[data-style=hanson] .modes{margin:0;border:0;border-radius:0;gap:clamp(16px,2.2cqi,32px);overflow:visible}
