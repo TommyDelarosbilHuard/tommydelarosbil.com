@@ -1,4 +1,4 @@
-/* Compass, design system (white-label): make the rules executable.
+/* System first (white-label): make the rules executable.
    Two hands on one artifact. The reader, and an agent (its cursor is labelled) that tends the system:
    it tunes, checks, and repairs. It never replays a script. Every step it takes is planned from the
    artifact as it is right now: which room is open, every token's current value, which checks fail.
@@ -8,7 +8,7 @@
    One source of truth (T). Stage, Tokens, System, the header count and the panel all read from it, every
    frame it changes, so a value can never be one thing in one room and another elsewhere. */
 import { $, $$, desk, clamp, css, ABORT } from './core.js';
-css('compass');
+css('enterprise');
 
 const spark = '<svg viewBox="0 0 24 24"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z" fill="currentColor"/></svg>';
 const lockI = '<svg class="cs-lk" viewBox="0 0 16 16"><rect x="3.5" y="7" width="9" height="6.5" rx="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></svg>';

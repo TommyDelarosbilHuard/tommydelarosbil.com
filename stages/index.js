@@ -7,8 +7,8 @@ const LOADERS = {
   'payment-gateway': () => import('./gdi.js'),
   'waitzine': () => import('./waitzine-loop.js'),             // the screenshot on a loop (2026-10-18);
   'mastering-revisions': () => import('./revisions-loop.js'),  // waitzine.js and revisions.js are the earlier rebuilds
-  'compass-system': () => import('./compass-system.js'),
-  'compass-intel': () => import('./compass-intel.js'),
+  'system-first': () => import('./system-first.js'),
+  'beyond-chat': () => import('./beyond-chat.js'),
   'beer-table': () => import('./beer.js'),
 };
 const live = new Map();

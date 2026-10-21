@@ -1,11 +1,11 @@
-/* Compass, intelligence (white-label): why we stopped making chat the destination.
+/* Beyond chat (white-label): why we stopped making chat the destination.
    The live chat as people met it in testing, on an anonymous dashboard. One abandoned start, then the question.
    The chat opens and the page behind it goes dark: the conversation is the whole story. Every answer restates the
    dashboard, asks for context the screen already shows, or offers generic tips; the AI has the data, only the
    person knows why. Beside the cursor, what they think and feel, from patient to furious. The clock keeps running,
    the useful answers stay at zero, and they close the chat for good: trust is gone. */
 import { $, $$, el, desk, css } from './core.js';
-css('compass');
+css('enterprise');
 
 const spark = '<svg class="ci-sp" viewBox="0 0 24 24"><path d="M12 3l1.7 5.6L19 10l-5.3 1.5L12 17l-1.7-5.5L5 10l5.3-1.4zM18.5 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z" fill="currentColor"/></svg>';
 const send = '<svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2.5-6.5z" fill="currentColor"/></svg>';
@@ -33,7 +33,7 @@ const DASH = `
     <div class="ci-cin"><em class="ci-q ci-cq"></em><i class="ci-caret"></i><span class="ci-cph">Ask a question…</span><span class="ci-go">${send}</span></div><small class="ci-disc">AI can make mistakes. Check important information.</small></aside>
 </section>`;
 
-export const CI_DASH = DASH;   // the case page's images draw the same dashboard (tools/case_shots/compass-intel.js)
+export const CI_DASH = DASH;   // the case page's images draw the same dashboard (tools/case_shots/beyond-chat.js)
 
 // The conversation, as testing showed it: each answer is plausible, none uses what the person knows.
 // [who, text, what they think after it (mood 0 calm → 4 furious)]

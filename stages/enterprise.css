@@ -1,5 +1,5 @@
-/* Compass (white-label): Foundation, a code-first design system in three rooms, with its tuning panel. */
-.stg-compass-system{background:#0b0a12}
+/* The white-label cases: Foundation, a code-first design system in three rooms, with its tuning panel. */
+.stg-system-first{background:#0b0a12}
 .cs{position:absolute;inset:0;--acc:#9333ea;--h1:3.35;--r:24px;--rn:16px;color:#fff;font-family:"Space Grotesk",sans-serif;
   background:radial-gradient(60% 70% at 38% 46%,color-mix(in srgb,var(--acc) 26%,transparent),transparent 70%),radial-gradient(50% 60% at 80% 90%,rgba(40,180,170,.12),transparent 70%),#0c0b14}
 .cs-bar{position:absolute;left:0;right:0;top:0;height:58px;display:flex;align-items:center;gap:28px;padding:0 28px 0 24px;border-bottom:1px solid rgba(255,255,255,.07);z-index:3}
@@ -78,9 +78,9 @@
 .cs-fader[data-k="hue"] .knob{background:var(--acc);box-shadow:0 0 0 2px #fff}
 .cs-fader[data-k="hue"].on .knob{box-shadow:0 0 0 2px #fff,0 0 0 7px rgba(255,255,255,.18)}
 
-/* ---------- Compass intelligence: the live chat, as people met it in testing ----------
+/* ---------- Beyond chat: the live chat, as people met it in testing ----------
    Its own look, unrelated to the product it comes from: warm paper, forest green, tight corners, a compact chat. */
-.stg-compass-intel{background:#F3EFE6}
+.stg-beyond-chat{background:#F3EFE6}
 .ci{--bg:#F3EFE6;--card:#FFFCF6;--line:#E4DCCB;--ink:#1E2721;--mute:#7A7366;--acc:#1F6B47;--acc-2:#DDEBDF;position:absolute;inset:0;background:var(--bg);color:var(--ink);font:400 13px/1.4 "Nunito Sans",sans-serif}
 .ci-era{position:absolute;left:14px;bottom:14px;z-index:20;display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 12px 0 10px;border-radius:99px;background:rgba(30,39,33,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font:500 11px/1 "Geist Mono",monospace;letter-spacing:.04em;color:#fff;pointer-events:none}
 .ci-era i{width:7px;height:7px;border-radius:50%;background:#F59E0B;transition:background .5s}
@@ -145,7 +145,7 @@
 .ci-cfocus .ci-cin .ci-caret{opacity:1;animation:gd-caret .9s steps(2) infinite}
 .ci-disc{display:block;flex:none;padding:9px 18px 14px;text-align:center;color:#A39B8B;font-size:10.5px}
 /* what they think, beside the cursor */
-.stg-world.stg-compass-intel:hover .cur{opacity:1}
+.stg-world.stg-beyond-chat:hover .cur{opacity:1}
 .cur.ci-hand{z-index:95}
 .cur.ci-hand svg{fill:var(--ink,#1E2721)}
 .ci-think{position:absolute;left:22px;top:22px;padding:7px 12px;border-radius:13px 13px 13px 3px;background:#4B5548;color:#fff;font:700 15px/1.2 "Nunito Sans",sans-serif;white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.28);opacity:0;transform:scale(.7);transform-origin:0 0;transition:opacity .3s,transform .45s var(--e),background .5s}
@@ -158,7 +158,7 @@
 @keyframes ci-rage{20%{transform:translateX(-4px) rotate(-2deg)}40%{transform:translateX(4px) rotate(2deg)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}
 
 /* ---------- Foundation v2: the agent, live checks, honest controls ---------- */
-.stg-world.stg-compass-system:hover .cur{opacity:1}
+.stg-world.stg-system-first:hover .cur{opacity:1}
 .cur.agent{z-index:95;transition:transform .8s cubic-bezier(.45,.05,.2,1),opacity .4s}
 .cur.agent svg{fill:var(--acc,#9333ea);stroke:#fff}
 .cur-tag{position:absolute;left:18px;top:18px;display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 9px;border-radius:11px 11px 11px 3px;background:var(--acc,#9333ea);color:#fff;font:600 11px/1 "Space Grotesk",sans-serif;white-space:nowrap;box-shadow:0 6px 16px rgba(0,0,0,.35)}
