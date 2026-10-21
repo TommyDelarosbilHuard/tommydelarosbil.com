@@ -361,7 +361,7 @@ world.addEventListener('click', e => {
   if (!host) return;
   // off the phone: open the case (not while editing the site, not the page already open)
   const href = host.closest('.feat,.row')?.querySelector('.row-cta')?.getAttribute('href') || '#c-nexgen';
-  if (!onPhone(e) && !document.body.classList.contains('editing') && location.hash !== href) { location.hash = href; return; }
+  if (!onPhone(e) && !document.body.classList.contains('editing') && !window.isHere(href)) { window.go(href); return; }
   const r = host.getBoundingClientRect(), rp = document.createElement('i');
   rp.className = 'stg-ripple'; rp.style.left = (e.clientX - r.left) + 'px'; rp.style.top = (e.clientY - r.top) + 'px'; host.appendChild(rp); setTimeout(() => rp.remove(), 700);
   const b = host.closest('.feat')?.querySelector('.row-cta'); if (!b) return;

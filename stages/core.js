@@ -159,8 +159,8 @@ export function mountStage(host, load) {
   // outside the interactive work: go to the case (not while editing the site, not to the page already open)
   const open = e => {
     const href = host.closest('.row,.feat')?.querySelector('.row-cta')?.getAttribute('href') || '#c-' + host.dataset.stage;
-    if (document.body.classList.contains('editing') || location.hash === href) { nudge(e); return; }
-    location.hash = href;
+    if (document.body.classList.contains('editing') || window.isHere(href)) { nudge(e); return; }
+    window.go(href);
   };
   const link = host; host.tabIndex = 0;   // arrows turn a phone while the stage has focus
   let nt = 0;
