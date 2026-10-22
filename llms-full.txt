@@ -13,7 +13,7 @@ Product designer for 15+ years across music, commerce, hospitality, insurance an
 
 ## Case studies
 
-- [Intelligence that searches for you](https://www.tommydelarosbil.com/work/nexgen/): NexGen News · 2026 · Solo · 10 hours. News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
+- [Intelligence that searches for you](https://www.tommydelarosbil.com/work/nexgen/): NexGen News · 2026 · AI-Native Design · 10 hours. News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
 - Designing the system before the product (Shipped, white-label, password on request): AI sped up the team's output, and its drift. A token and rule system made consistency keep up with a two-week cadence.
 - [The agent lives in your inbox](https://www.tommydelarosbil.com/work/cedar/): Cedar · 2024–25 · Staff Product Designer · 6 weeks. People job hunting while working full time don't have room for another app. With the CEO and CTO, I put the AI agent in their inbox, gave it a voice with strict rules, and kept a small web app for what email can't do. 81% daily open rate, 5% paid conversion.
 - We stopped making chat the destination (Shipped, white-label, password on request): Live chat testing showed operators liked the intelligence, not the chat. The team deprecated chat and brought intelligence into the work instead.
@@ -41,7 +41,7 @@ Product designer for 15+ years across music, commerce, hospitality, insurance an
 
 https://www.tommydelarosbil.com/work/nexgen/
 
-NexGen News · 2026 · Solo · 10 hours · Exploration · Not yet shipped
+NexGen News · 2026 · AI-Native Design · 10 hours · Exploration · Not yet shipped
 
 News makes you start over on every visit: one story, dozens of headlines. In about ten hours, solo, I built the research engine first, then designed around one question instead of a feed: news that remembers what you're trying to understand and shows only what changed. A working prototype.
 
